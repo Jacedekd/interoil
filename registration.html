@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEROIL2</title>
+    <link type="image/x-icon" href="./assets/img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="popap">
+        <div class="popap__body">
+            <div class="popap__close"><img src="./assets/img/close.svg" alt=""></div>
+            <div class="popa__Title">Авторизация</div>
+            <label class="emaillabel" for="email">Email или номер телефона</label>
+            <input class="popap__input" type="text" id="email">
+            <div class="popap__passwordBlock">
+                <label for="password">Пароль</label>
+                <div class="popap__hide">
+                    <img src="./assets/img/passwordicon.svg" alt="">
+                    <span>Скрыть</span>
+                </div>
+            </div>
+            <input class="popap__input" type="text" id="password">
+            <button class="popap__btn">Войти</button>
+            <div class="popap__group">
+                <div class="popap__flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Запомнить данные</span>
+                </div>
+                <div class="popap__help">Нужна помощь?</div>
+            </div>
+            <div class="popap__registration">Нет учётной записи? <a href="./registration.html">Регистрация</a></div>
+        </div>
+    </div>
+    <nav class="toolbar">
+        <div class="toolbar__Top">
+            <div class="toolbar__container">
+                <div class="toolbarGroup">
+                    <div class="toolbarnumBlock">
+                        <img src="./assets/img/phone.svg" alt="">
+                        <span>+77071234567</span>
+                    </div>
+                    <div class="toolbarnumBlock">
+                        <img src="./assets/img/mail.svg" alt="">
+                        <span>info@interoil.com</span>
+                    </div>
+                    <img src="./assets/img/fasebook.svg" alt="">
+                    <img src="./assets/img/instagram.svg" alt="">
+                </div>
+                <div class="toolbarGroup2">
+                    <div class="language">
+                        <div class="language_En">ENG</div>
+                        <div class="language_Ru">RU</div>
+                        <div class="language_Togler"></div>
+                    </div>
+                    <div class="toolbarblock">
+                        <img src="./assets/img/geo.svg" alt="">
+                        <span>Алматы</span>
+                        <span class="span"></span>
+                    </div>
+                    <div class="toolbarblock signin">
+                        <img src="./assets/img/signIn.svg" alt="">
+                        <span>Войти</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar__Bottom">
+            <div class="toolbar__container">
+                <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
+                <ul>
+                    <li><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="./index.html">КАТАЛОГ</a></li>
+                    <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">ВАКАНСИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="backgroundImg d-flex align-items-center">
+        <div class="toolbar__container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <header class="registration__header">
+        <form class="registration">
+            <div class="registration__group">
+                <div class="registration__title">Создание аккаунта</div>
+                <span><a href="./index.html">Войти</a></span>
+            </div>
+            <label for="name">Введите ваше имя</label>
+            <input autocomplete="off" type="text" id="name">
+            <label for="lastname">Введите вашу фамилию</label>
+            <input autocomplete="off" type="text" id="lastname">
+            <label for="phone">Введите номер телефона</label>
+            <input autocomplete="off" type="text" id="phone">
+            <label for="email">Email</label>
+            <input autocomplete="off" type="text" id="email">
+            <label for="inn">ИИН</label>
+            <input autocomplete="off" type="text" id="inn">
+            <div class="popap__passwordBlock">
+                <label for="password">Пароль</label>
+                <div class="popap__hide">
+                    <img src="./assets/img/passwordicon.svg" alt="">
+                    <span>Скрыть</span>
+                </div>
+            </div>
+            <input type="text" id="password">
+            <div class="agreement__block">
+                <input type="checkbox" name="" id="">
+                <div class="agreement__text">
+                    Создавая учетную запись, я соглашаюсь с нашими <span>Условиями использования</span> и <span>Политика конфиденциальности</span>  
+                </div>
+            </div>
+            <button class="registration__btn">Создать аккаунт</button>
+        </form>
+    </header>
+    <footer class="footer">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-4"><img src="./assets/img/imgcards/footerLogo.svg" alt=""></div>
+                <div class="col-2">
+                    <div class="footerItem">
+                        <div class="footerText ftrmode">Продукция</div>
+                        <div class="footerText">Моторные масла</div>
+                        <div class="footerText">Коммерческие масла</div>
+                        <div class="footerText">Трансмиссионные масла</div>
+                        <div class="footerText">Пластичные смазки</div>
+                        <div class="footerText">Охлаждающие жидкости</div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="footerItem">
+                        <div class="footerText ftrmode">Компания </div>
+                        <div class="footerText">О нас</div>
+                        <div class="footerText">Новости</div>
+                        <div class="footerText">Мероприятия</div>
+                        <div class="footerText">Наши клиенты</div>
+                        <div class="footerText">Карьера</div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="footerItem">
+                        <div class="footerText ftrmode">Поддержка</div>
+                        <div class="footerText">Связаться с нами</div>
+                        <div class="footerText">Помощь</div>
+                        <div class="footerText">Публичная оферта</div>
+                        <div class="footerText">Карта сайта</div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="footerItem">
+                        <div class="footerText ftrmode">Информация</div>
+                        <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
+                        <div class="footerText">E-mail: office@interoil.kz</div>
+                        <div class="footerText">Телефон: +7 (727) 321 04 67</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__Bottom">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <div class="footer__Bottomtext">© interoil 2022</div>
+                </div>
+                <div class="col">
+                    <div class="footer__BottomGroup">
+                        <div class="footerIcon">
+                            <img src="./assets/img/imgcards/footer_fasebook.svg" alt="">
+                            <img src="./assets/img/imgcards/footer_twiter.svg" alt="">
+                            <img src="./assets/img/imgcards/footer_instagram.svg" alt="">
+                        </div>
+                        <div class="footerLanguage">Русский<span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/cards/script.js"></script>
+</body>
+
+</html>

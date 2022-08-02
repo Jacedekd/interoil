@@ -1,24 +1,25 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
 
-  loop: true,
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+//   loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
 
 
 let sort_Crug = document.querySelector('.sort_Crug');
@@ -42,6 +43,7 @@ sortiv.addEventListener('click', () => {
   sort_Crug.style.margin = '0px'
   sort_Crug.innerHTML = 'Показать всё'
 })
+
 
 let acc = document.getElementsByClassName("filter__Item");
 let i;
@@ -160,6 +162,7 @@ let body = document.querySelector('body')
 signin.addEventListener('click', () => {
   popap.classList.add('popap__active');
   body.classList.add('bodystop');
+  console.log('sadf');
 })
 
 popap__close.addEventListener('click', () => {
@@ -203,3 +206,4 @@ document.querySelectorAll(".dropdown-menu li").click(function () {
       msg = '<span class="msg">Hidden input value: ';
   document.getElementByClassName("msg").innerHTML = msg + input + '</span>';
 });
+

@@ -38,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .bodystop {
     overflow: hidden;
 }
@@ -328,7 +329,9 @@ body {
     padding: 10px 0;
     border-bottom: 2px solid rgba(58, 58, 68, 0.24);
     margin-bottom: 20px;
-
+    /* max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; */
 }
 
 .filter__Item {
@@ -1540,10 +1543,12 @@ img {
     opacity: 0;
     overflow: hidden;
 }
- .group__dropdownActive{
+
+.group__dropdownActive {
     opacity: 1;
     overflow: inherit;
 }
+
 .group__dropdownText {
     cursor: pointer;
     padding: 5px 10px;
@@ -1551,4 +1556,104 @@ img {
 
 .group__dropdownText:hover {
     background-color: #cccc;
+}
+
+.registration__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.registration {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.registration__title {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.registration span {
+    height: 16px;
+}
+.registration__group span a {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #111111;
+}
+
+.registration label {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.registration input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+}
+
+.registration input:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.agreement__block {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 32px;
+}
+.agreement__block input {
+    height: 14px;
+}
+
+.agreement__text {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.agreement__text span {
+    border-bottom: 1px solid #000;
+}
+
+.registration__btn {
+    background: #005287;
+    border-radius: 10px;
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    padding: 18px 0;
+    color: #FFFFFF;
+    border: none;
 }
