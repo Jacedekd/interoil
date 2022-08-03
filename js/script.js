@@ -1,25 +1,25 @@
 
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
 
-//   loop: true,
+  loop: true,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 
 let sort_Crug = document.querySelector('.sort_Crug');
@@ -151,7 +151,7 @@ let language = document.querySelector('.language');
 
 
 language.addEventListener('click', () => {
-    language_Togler.classList.toggle('change')
+  language_Togler.classList.toggle('change')
 })
 
 let signin = document.querySelector('.signin');
@@ -184,26 +184,18 @@ group.addEventListener('click', () => {
 
 
 
-
-// document.getElementByClassName("dropdown").click(function () {
-//   this.attr('tabindex', 1).focus();
-//   this.classList.toggle("active");
-//   this.find('.dropdown-menu').slideToggle(300);
-// });
-// document.getElementByClassName("dropdown").focusout(function () {
-//   this.classList.remove("active");
-//   this.find('.dropdown-menu').slideUp(300);
-// });
-// $('.dropdown .dropdown-menu li').click(function () {
-//   this.parents('.dropdown').find('span').innerText = this.text();
-//   this.parents('.dropdown').find('input').attr('value', this.attr('id'));
-// });
-
-
-
-document.querySelectorAll(".dropdown-menu li").click(function () {
-  let input = '<strong>' + this.parents('.dropdown').find('input').value + '</strong>',
-      msg = '<span class="msg">Hidden input value: ';
-  document.getElementByClassName("msg").innerHTML = msg + input + '</span>';
+/*Dropdown Menu*/
+$('.group').click(function () {
+  $(this).attr('tabindex', 1).focus();
+  $(this).toggleClass('active');
+  $(this).find('.dropdown-menu').slideToggle(300);
+});
+$('.group').focusout(function () {
+  $(this).removeClass('active');
+  $(this).find('.dropdown-menu').slideUp(300);
+});
+$('.group .dropdown-menu li').click(function () {
+  // $(this).parents('.group').find('span').text($(this).text());
+  $(this).parents('.group').find('input').attr('value', $(this).attr('id'));
 });
 
