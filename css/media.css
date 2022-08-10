@@ -5,11 +5,10 @@
     }
 
     .toolbar__block {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        /* height: 100%;  */
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -28,11 +27,21 @@
     }
 
     .toolbar__iconBlock {
-        position: fixed;
+        /* position: absolute;
         top: 17%;
         left: 92%;
-        transform: translate(-50%, -50%);
+        z-index: 11; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
         z-index: 11;
+        transition: 0.3s ease;
+        padding: 163px 35px 0 0;
+        transform: translateY(-35px);
         opacity: 0;
         visibility: hidden;
     }
@@ -110,7 +119,7 @@
 @media screen and (max-width: 550px) {
 
     .toolbarGroup2 {
-        display: flex;
+        /* display: flex;
         column-gap: 24px;
         position: absolute;
         flex-direction: column;
@@ -119,6 +128,20 @@
         z-index: 11;
         align-items: flex-end;
         row-gap: 15px;
+         */
+        position: absolute;
+        row-gap: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 11;
+        transition: 0.3s ease;
+        padding: 163px 35px 0 0;
+        transform: translateY(230px);
         opacity: 0;
         visibility: hidden;
     }
@@ -334,25 +357,30 @@
         width: auto;
     }
 }
+
 @media screen and (max-width: 495px) {
     .content__flexItem {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
     }
+
     .groupInput {
         width: 80vw;
     }
+
     .content__flexItem {
         align-items: center;
-      }
-      .content__block {
+    }
+
+    .content__block {
         flex-direction: column;
         row-gap: 5px;
-      }
-      .contentTeg {
+    }
+
+    .contentTeg {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-      }
+    }
 }
