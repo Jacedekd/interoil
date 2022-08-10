@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -78,16 +80,32 @@
             <div class="toolbar__Bottom">
                 <div class="toolbar__container">
                     <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
-                    <ul>
-                        <li><a href="#">ГЛАВНАЯ</a></li>
-                        <li><a href="#">КАТАЛОГ</a></li>
-                        <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
-                        <li><a href="#">О НАС</a></li>
-                        <li><a href="#">ВАКАНСИИ</a></li>
-                        <li><a href="#">КОНТАКТЫ</a></li>
-                    </ul>
+                    <div class="toolbar__block">
+                        <ul>
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                            <li><a href="#">О НАС</a></li>
+                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="toolbar__iconBlock">
+                        <img class="img_svg" src="./assets/img/toolbar__search.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__like.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__bag.svg" alt="">
+                    </div>
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
                 </div>
             </div>
+            <div class="menu-bg" id="menu-bg"></div>
+
         </nav>
         <div class="backgroundImg d-flex align-items-center">
             <div class="toolbar__container">
@@ -99,7 +117,7 @@
                 </nav>
             </div>
         </div>
-        <header class="header">
+         <header class="header">
             <div class="container">
                 <div class="header__group">
                     <div class="filter">
@@ -259,19 +277,14 @@
                                         <li id="ligde">ligde</li>
                                     </ul>
                                 </div>
-                                
-                                
-                                
-
-
-
+                            
                             </div>
                             
                             <div class="content__flexItem">
                                 <div class="flexItem__sortirovka">
                                     <div class="sortiv">Показать все</div>
                                     <div class="sortiv_num">36</div>
-                                    <div class="sortiv_num2">24</div>
+                                     <div class="sortiv_num2">24</div>
                                     <div class="sort_Crug">Показать всё</div>
                                 </div>
                                 <div class="flexItem__view">
@@ -285,19 +298,19 @@
                         <div class="content__alfa">
                             <div class="content__block">
                                 <span>Теги</span>
-                                <div class="content__blockText">Gazprom</div>
-                                <div class="content__blockText">10w40 <span><img src="/assets/img/close.svg"
-                                            alt=""></span>
+                                <div class="contentTeg">
+                                    <div class="content__blockText">Gazprom</div>
+                                <div class="content__blockText">10w40 <span><img src="/assets/img/close.svg"></span>
                                 </div>
                                 <div class="content__blockText">10w30</div>
-                                <div class="content__blockText">g-energy <span><img src="/assets/img/close.svg"
-                                            alt=""></span></div>
+                                <div class="content__blockText">g-energy <span><img src="/assets/img/close.svg"></span></div>
+                                </div>
                             </div>
                             <div class="search__Block"><input placeholder="Поиск" type="text"></div>
                         </div>
 
                         <div class="row content__Grid">
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/energy.png" alt="">
                                     <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
@@ -305,7 +318,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/oil.png" alt="">
                                     <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
@@ -313,7 +326,7 @@
                                     <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/gazprom.png" alt="">
                                     <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
@@ -321,7 +334,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/energy.png" alt="">
                                     <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
@@ -329,7 +342,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/oil.png" alt="">
                                     <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
@@ -337,7 +350,7 @@
                                     <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/gazprom.png" alt="">
                                     <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
@@ -345,7 +358,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/energy.png" alt="">
                                     <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
@@ -353,7 +366,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/oil.png" alt="">
                                     <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
@@ -361,7 +374,7 @@
                                     <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/gazprom.png" alt="">
                                     <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
@@ -369,7 +382,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/energy.png" alt="">
                                     <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
@@ -377,7 +390,7 @@
                                     <button class="content__CardsBtn">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/oil.png" alt="">
                                     <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
@@ -385,7 +398,7 @@
                                     <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-5 col-xl-4">
                                 <div class="content__Cards">
                                     <img src="./assets/img/gazprom.png" alt="">
                                     <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
@@ -394,14 +407,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    </div>
+    </div>
+    </div>
+    </header>
         <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="swiper__Cards">
                         <div class="swiper__CardsGroup">
@@ -454,14 +465,14 @@
                     </div>
                 </div>
             </div>
-            <!-- If we need pagination -->
+
             <div class="swiper-pagination"></div>
         </div>
         <footer class="footer">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-4"><img src="./assets/img/footerLogo.svg" alt=""></div>
-                    <div class="col-2">
+                    <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
                         <div class="footerItem">
                             <div class="footerText ftrmode">Продукция</div>
                             <div class="footerText">Моторные масла</div>
@@ -471,7 +482,7 @@
                             <div class="footerText">Охлаждающие жидкости</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-6">
                         <div class="footerItem">
                             <div class="footerText ftrmode">Компания </div>
                             <div class="footerText">О нас</div>
@@ -481,7 +492,7 @@
                             <div class="footerText">Карьера</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-6">
                         <div class="footerItem">
                             <div class="footerText ftrmode">Поддержка</div>
                             <div class="footerText">Связаться с нами</div>
@@ -490,7 +501,7 @@
                             <div class="footerText">Карта сайта</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-6">
                         <div class="footerItem">
                             <div class="footerText ftrmode">Информация</div>
                             <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
