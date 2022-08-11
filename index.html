@@ -116,16 +116,30 @@
                 </nav>
             </div>
         </div>
-         <header class="header">
+        <header class="header">
             <div class="container">
                 <div class="header__group">
                     <div class="filter">
                         <div class="filter__Title"><span><img src="./assets/img/filterIcon.svg" alt=""></span> Фильтр
                         </div>
-                        <div class="filter__brand">
-                            <div class="filter__brandText">Выберите бренд</div>
-                            <img src="./assets/img/arrow.svg" alt="">
+                        <div class="filter__brandGp">
+                            <div class="filter__brand">
+                                <div class="filter__brandText">Выберите бренд</div>
+                                <img src="./assets/img/arrow.svg" alt="">
+                            </div>
+                            <div class="classification___Box">
+                                <div class="classification___Boxtext"><input
+                                        type="checkbox"><span>Минеральное</span>
+                                </div>
+                                <div class="classification___Boxtext"><input
+                                        type="checkbox"><span>Полусинтетическое</span>
+                                </div>
+                                <div class="classification___Boxtext"><input
+                                        type="checkbox"><span>Синтетическое</span>
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="filter__Box">
                             <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
                                         alt=""></span>
@@ -174,10 +188,22 @@
                             </div>
                         </div>
                         <div class="classification">
-
-                            <div class="classification__Title">
-                                <div class="classification__text">Классификация по API</div>
-                                <img src="./assets/img/arrow.svg" alt="">
+                            <div class="classificationAPI">
+                                <div class="classification__Title">
+                                    <div class="classification__text">Классификация по API</div>
+                                    <img src="./assets/img/arrow.svg" alt="">
+                                </div>
+                                <div class="classification___Box">
+                                    <div class="classification___Boxtext"><input
+                                            type="checkbox"><span>Минеральное</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input
+                                            type="checkbox"><span>Полусинтетическое</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input
+                                            type="checkbox"><span>Синтетическое</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="classification__Item changeC">
                                 <div class="classification_Itemtext">Вид масла</div>
@@ -207,28 +233,67 @@
                                 <div class="classification___Boxtext"><input type="checkbox"><span>5W-40</span></div>
                                 <div class="classification___Boxtext"><input type="checkbox"><span>5W-50</span></div>
                             </div>
-                            <div class="CFI2">
-                                <div class="classification_Itemtext">Теги</div>
-                                <img src="./assets/img/arrow.svg" alt="">
+                            <div class="CFI3">
+                                <div class="CFI3mode">
+                                    <div class="classification_Itemtext">Теги</div>
+                                    <img src="./assets/img/arrow.svg" alt="">
+                                </div>
+                                <div class="classification___Box3">
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>Gazprom</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>10w40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>10w30</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>g-energy</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>Evooil</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>Platinum</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="classification___Box2">
-                                <div class="classification___Boxtext"><input type="checkbox"><span>Gazprom</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>10w40</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>10w30</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>g-energy</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>Evooil</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>Platinum</span></div>
-                                <div class="classification___Boxtext"><input type="checkbox"><span>O10W-40</span></div>
-                            </div>
+
                         </div>
                     </div>
-                    
+
                     <div class="content__main">
                         <div class="content__flex">
                             <div class="content__flexItem">
                                 <div class="group">
                                     <input class="groupInput" type="text" required>
                                     <label class="groupLabel">Сортировка</label>
+                                    <div class="group__arrow arr1"></div>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <div class="group__arrow arr2"></div>
                                     <ul class="dropdown-menu">
                                         <li id="male">Male</li>
                                         <li id="Bace">Bace</li>
@@ -249,16 +314,7 @@
                                 <div class="group">
                                     <input class="groupInput" type="text" required>
                                     <label class="groupLabel">Тип</label>
-                                    <ul class="dropdown-menu">
-                                        <li id="male">Male</li>
-                                        <li id="Bace">Bace</li>
-                                        <li id="female">Female</li>
-                                        <li id="ligde">ligde</li>
-                                    </ul>
-                                </div>
-                                <div class="group">
-                                    <input class="groupInput" type="text" required>
-                                    <label class="groupLabel">Тип</label>
+                                    <div class="group__arrow arr3"></div>
                                     <ul class="dropdown-menu">
                                         <li id="male">Male</li>
                                         <li id="Bace">Bace</li>
@@ -269,6 +325,7 @@
                                 <div class="group">
                                     <input class="groupInput" type="text" required>
                                     <label class="groupLabel">Наличие</label>
+                                    <div class="group__arrow"></div>
                                     <ul class="dropdown-menu">
                                         <li id="male">Male</li>
                                         <li id="Bace">Bace</li>
@@ -276,14 +333,14 @@
                                         <li id="ligde">ligde</li>
                                     </ul>
                                 </div>
-                            
+
                             </div>
-                            
+
                             <div class="content__flexItem">
                                 <div class="flexItem__sortirovka">
                                     <div class="sortiv">Показать все</div>
                                     <div class="sortiv_num">36</div>
-                                     <div class="sortiv_num2">24</div>
+                                    <div class="sortiv_num2">24</div>
                                     <div class="sort_Crug">Показать всё</div>
                                 </div>
                                 <div class="flexItem__view">
@@ -299,10 +356,10 @@
                                 <span>Теги</span>
                                 <div class="contentTeg">
                                     <div class="content__blockText">Gazprom<span>×</span></div>
-                                <div class="content__blockText">10w40 <span>×</span>
-                                </div>
-                                <div class="content__blockText">10w30<span>×</span></div>
-                                <div class="content__blockText">g-energy <span>×</span></div>
+                                    <div class="content__blockText">10w40 <span>×</span>
+                                    </div>
+                                    <div class="content__blockText">10w30<span>×</span></div>
+                                    <div class="content__blockText">g-energy <span>×</span></div>
                                 </div>
                             </div>
                             <div class="search__Block"><input placeholder="Поиск" type="text"></div>
@@ -406,10 +463,10 @@
                                 </div>
                             </div>
                         </div>
-    </div>
-    </div>
-    </div>
-    </header>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">

@@ -8,26 +8,26 @@ language.addEventListener('click', () => {
   language_Togler.classList.toggle('change')
 })
 
-  let hamburger = document.querySelector(".hamburger");
-  let ul = document.querySelector(".toolbar__block");
-  let toolbarGroup2 = document.querySelector('.toolbarGroup2');
-  let toolbar__iconBlock = document.querySelector('.toolbar__iconBlock');
-
-  
-
-  hamburger.addEventListener("click", function() {
-
-    hamburger.classList.toggle("is-active");
-    ul.classList.toggle("is-active");
-    toolbar__iconBlock.classList.toggle("is-active");
+let hamburger = document.querySelector(".hamburger");
+let ul = document.querySelector(".toolbar__block");
+let toolbarGroup2 = document.querySelector('.toolbarGroup2');
+let toolbar__iconBlock = document.querySelector('.toolbar__iconBlock');
 
 
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-    toolbarGroup2.classList.toggle("is-active");
 
-    
+hamburger.addEventListener("click", function () {
 
-  });
+  hamburger.classList.toggle("is-active");
+  ul.classList.toggle("is-active");
+  toolbar__iconBlock.classList.toggle("is-active");
+
+
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+  toolbarGroup2.classList.toggle("is-active");
+
+
+
+});
 
 
 let signin = document.querySelector('.signin');
@@ -145,13 +145,31 @@ for (increment3 = 0; increment3 < acc3.length; increment3++) {
     } else {
       classification___Box2.style.maxHeight = classification___Box2.scrollHeight + "px";
       console.log('dsf');
-
-
     }
   });
 }
+let classificationAPI = document.querySelector('.classificationAPI');
+let increment5;
 
+  classificationAPI.addEventListener("click", function () {
+    this.classList.toggle("activeA");
+  });
 
+let acc4 = document.getElementsByClassName("CFI3");
+let increment4;
+
+for (increment4 = 0; increment4 < acc4.length; increment4++) {
+  acc4[increment4].addEventListener("click", function () {
+    this.classList.toggle("activeS");
+  });
+}
+let filter__brandGp = document.querySelector(".filter__brandGp");
+
+filter__brandGp.addEventListener("click", function () {
+    this.classList.toggle("activeF");
+  });
+
+filter__brandGp
 
 
 changeC.addEventListener('click', () => {
@@ -196,46 +214,63 @@ viewGrid.addEventListener('click', () => {
 
 
 
-let group = document.querySelector('.group');
-let group__dropdown = document.querySelector('.group__dropdown');
+let group__arrow = document.getElementsByClassName('.group__arrow');
 
+let group = document.getElementsByClassName('group');
 
-group.addEventListener('click', () => {
-  group__dropdown.classList.add('group__dropdownActive');
-})
+let ic;
 
+// [].slice.call(group__arrow).forEach(function(b) {
+//   b.addEventListener('click', function() {
+//     [].slice.call(group__arrow).forEach(function(b1) {
+//       b1.classList[b1 === b ? 'add': 'remove']('arr__active');
+//     });
+//   });
+// })
 
+for (ic = 0; ic < group.length; ic++) {
+  group[ic].addEventListener("click", function () {
+    group.classList.toggle("activeS");
 
+  });
+}
 
 
 /*Dropdown Menu*/
 $('.group').click(function () {
   $(this).attr('tabindex', 1).focus();
+  // $(".group__arrow").attr('tabindex', 1).focus();
   $(this).toggleClass('active');
   $(this).find('.dropdown-menu').slideToggle(300);
+
 });
 $('.group').focusout(function () {
   $(this).removeClass('active');
   $(this).find('.dropdown-menu').slideUp(300);
+
 });
 $('.group .dropdown-menu li').click(function () {
   // $(this).parents('.group').find('span').text($(this).text());
   $(this).parents('.group').find('input').attr('value', $(this).attr('id'));
 });
 
+
+
+
+
 $(".img_svg").each(function () {
   var $img = $(this);
   var imgClass = $img.attr("class");
   var imgURL = $img.attr("src");
   $.get(imgURL, function (data) {
-      var $svg = $(data).find("svg");
-      if (typeof imgClass !== "undefined") {
-          $svg = $svg.attr("class", imgClass + " replaced-svg");
-      }
-      $svg = $svg.removeAttr("xmlns:a");
-      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-          $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"))
-      }
-      $img.replaceWith($svg);
+    var $svg = $(data).find("svg");
+    if (typeof imgClass !== "undefined") {
+      $svg = $svg.attr("class", imgClass + " replaced-svg");
+    }
+    $svg = $svg.removeAttr("xmlns:a");
+    if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+      $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"))
+    }
+    $img.replaceWith($svg);
   }, "xml");
 });
