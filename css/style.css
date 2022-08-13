@@ -988,7 +988,7 @@ img {
     background-color: rgba(0, 0, 0, 0.504);
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 20;
     overflow-y: auto;
     overflow-x: hidden;
     transition: all .8s ease 0s;

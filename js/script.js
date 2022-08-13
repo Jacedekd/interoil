@@ -12,7 +12,7 @@ let hamburger = document.querySelector(".hamburger");
 let ul = document.querySelector(".toolbar__block");
 let toolbarGroup2 = document.querySelector('.toolbarGroup2');
 let toolbar__iconBlock = document.querySelector('.toolbar__iconBlock');
-
+let popap__body = document.querySelector('.popap__body');
 
 
 hamburger.addEventListener("click", function () {
@@ -20,7 +20,7 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
   ul.classList.toggle("is-active");
   toolbar__iconBlock.classList.toggle("is-active");
-
+  // popap__body.classList.add('popapPosition');
 
   document.getElementById("menu-bg").classList.toggle("change-bg");
   toolbarGroup2.classList.toggle("is-active");
@@ -38,7 +38,13 @@ let body = document.querySelector('body')
 signin.addEventListener('click', () => {
   popap.classList.add('popap__active');
   body.classList.add('bodystop');
-  console.log('sadf');
+  toolbar__iconBlock.classList.toggle("is-active");
+  hamburger.classList.remove("is-active");
+  ul.classList.remove("is-active");
+  toolbarGroup2.classList.remove("is-active");
+  toolbar__iconBlock.classList.remove("is-active");
+  document.getElementById("menu-bg").classList.remove("change-bg");
+
 })
 
 popap__close.addEventListener('click', () => {

@@ -119,16 +119,6 @@
 @media screen and (max-width: 550px) {
 
     .toolbarGroup2 {
-        /* display: flex;
-        column-gap: 24px;
-        position: absolute;
-        flex-direction: column;
-        top: 44%;
-        right: 6%;
-        z-index: 11;
-        align-items: flex-end;
-        row-gap: 15px;
-         */
         position: absolute;
         row-gap: 15px;
         top: 0;
@@ -146,6 +136,7 @@
         visibility: hidden;
     }
 
+
     .is-active {
         opacity: 1;
         visibility: visible;
@@ -153,6 +144,17 @@
 
     .backgroundImg {
         height: 100px;
+    }
+
+    .popap__body {}
+
+    .popap__active .popap__body {
+        opacity: 1;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
     }
 
 }
@@ -383,4 +385,16 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
+}
+
+@media screen and (max-width: 585px) {
+    .popap__body {
+        /* width: 90vw; */
+        /* position: relative; */
+    }
+
+    /* .popap__active .popap__body {
+        transform: translate(-73%, -12%);
+        opacity: 1;
+      } */
 }
