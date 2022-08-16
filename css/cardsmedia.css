@@ -296,9 +296,29 @@
     .cardsItem {
         Width: 80vw;
     }
+
+    .tabsTitle,
+    .tabsSubtitle {
+        font-size: 21px;
+    }
+
+    .tabsDesc,
+    .tabsSubDesc {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 472px) {
+
+    .tabsTitle,
+    .tabsSubtitle {
+        font-size: 20px;
+    }
+
+    .tabsDesc,
+    .tabsSubDesc {
+        font-size: 17px;
+    }
 
     .headerGroup__Title {
         font-size: 23px;
@@ -316,9 +336,17 @@
     .variantsBtn {
         padding: 5px 13px;
     }
+
     .basket {
         font-size: 17px;
         padding: 15px 30px;
+    }
+
+    .header__Logo {
+        margin-bottom: 10px;
+        transform: scale(60%);
+
+
     }
 }
 
