@@ -234,10 +234,11 @@
         padding: 0;
         justify-content: center;
     }
+
     .header__Logo {
         margin-left: auto;
         margin-right: auto;
-      }
+    }
 
     .headerGroup__Title {
         min-width: 100%;
@@ -279,6 +280,7 @@
     .tabsSubtitle {
         font-size: 23px;
     }
+
     .headerGroup__Title {
         font-size: 25px;
     }
@@ -290,11 +292,44 @@
     .headerGroup__Title {
         font-size: 23px;
     }
+
+    .cardsItem {
+        Width: 80vw;
+    }
 }
 
 @media screen and (max-width: 472px) {
 
     .headerGroup__Title {
         font-size: 23px;
+    }
+
+    .headerGroup__Title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .variantsBtn:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    .variantsBtn {
+        padding: 5px 13px;
+    }
+    .basket {
+        font-size: 17px;
+        padding: 15px 30px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .cardsItem {
+        Height: 429px;
+        Width: 80vw;
+    }
+
+    .cardsBlockTitle {
+        font-size: 26px;
     }
 }
