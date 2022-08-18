@@ -392,13 +392,55 @@
 }
 
 @media screen and (max-width: 585px) {
-    .popap__body {
-        /* width: 90vw; */
-        /* position: relative; */
+
+    .registration input {
+        width: 85vw;
+        margin: 0 auto 25px auto;
     }
 
-    /* .popap__active .popap__body {
-        transform: translate(-73%, -12%);
-        opacity: 1;
+
+    .registration__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        column-gap: 50px;
+    }
+
+    /* .registration label {
+        padding-left: 30px;
       } */
+
+    .registration {
+        width: 90vw;
+    }
+
+    .checkbox {
+        width: 14px !important;
+    }
+    .registration .popap__passwordBlock {
+        width: 86vw;
+    }
+}
+
+@media screen and (max-width: 512px) {
+
+
+
+    .registration__title {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .registration__title {
+        font-size: 26px;
+    }
+
+    .registration label {
+        padding-left: 20px;
+    }
+
 }

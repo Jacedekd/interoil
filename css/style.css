@@ -1135,12 +1135,14 @@ img {
 
 .popap__passwordBlock {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 10px;
 }
+.popap__hide {
+    transform: translateY(-5px);
 
+}
 .popap__hide span {
     font-style: normal;
     font-weight: 400;
@@ -1737,7 +1739,7 @@ img {
     height: 16px;
 }
 
-.registration__group span a {
+.registration__group span {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
     font-weight: 400;
@@ -1745,6 +1747,7 @@ img {
     line-height: 19px;
     text-decoration-line: underline;
     color: #111111;
+    cursor: pointer;
 }
 
 .registration label {

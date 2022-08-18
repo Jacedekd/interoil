@@ -10,7 +10,9 @@
     <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
     <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -75,16 +77,31 @@
         <div class="toolbar__Bottom">
             <div class="toolbar__container">
                 <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
-                <ul>
-                    <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="./index.html">КАТАЛОГ</a></li>
-                    <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
-                    <li><a href="#">О НАС</a></li>
-                    <li><a href="#">ВАКАНСИИ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                </ul>
+                <div class="toolbar__block">
+                    <ul>
+                        <li><a href="#">ГЛАВНАЯ</a></li>
+                        <li><a href="./index.html">КАТАЛОГ</a></li>
+                        <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">ВАКАНСИИ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="toolbar__iconBlock">
+                    <img class="img_svg" src="./assets/img/toolbar__search.svg" alt="">
+                    <img class="img_svg" src="./assets/img/toolbar__like.svg" alt="">
+                    <img class="img_svg" src="./assets/img/toolbar__bag.svg" alt="">
+                </div>
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
             </div>
         </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
     </nav>
     <div class="backgroundImg d-flex align-items-center">
         <div class="toolbar__container">
@@ -99,7 +116,7 @@
         <form class="registration">
             <div class="registration__group">
                 <div class="registration__title">Создание аккаунта</div>
-                <span><a href="./index.html">Войти</a></span>
+                <span class="rsignin">Войти</span>
             </div>
             <label for="name">Введите ваше имя</label>
             <input autocomplete="off" type="text" id="name">
@@ -120,7 +137,7 @@
             </div>
             <input type="text" id="password">
             <div class="agreement__block">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" class="checkbox" name="" id="">
                 <div class="agreement__text">
                     Создавая учетную запись, я соглашаюсь с нашими <span>Условиями использования</span> и <span>Политика конфиденциальности</span>  
                 </div>
@@ -131,8 +148,8 @@
     <footer class="footer">
         <div class="container-lg">
             <div class="row">
-                <div class="col-4"><img src="./assets/img/imgcards/footerLogo.svg" alt=""></div>
-                <div class="col-2">
+                <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="footerItem">
                         <div class="footerText ftrmode">Продукция</div>
                         <div class="footerText">Моторные масла</div>
@@ -142,7 +159,7 @@
                         <div class="footerText">Охлаждающие жидкости</div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="footerItem">
                         <div class="footerText ftrmode">Компания </div>
                         <div class="footerText">О нас</div>
@@ -152,7 +169,7 @@
                         <div class="footerText">Карьера</div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="footerItem">
                         <div class="footerText ftrmode">Поддержка</div>
                         <div class="footerText">Связаться с нами</div>
@@ -161,7 +178,7 @@
                         <div class="footerText">Карта сайта</div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-6">
                     <div class="footerItem">
                         <div class="footerText ftrmode">Информация</div>
                         <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
@@ -181,9 +198,9 @@
                 <div class="col">
                     <div class="footer__BottomGroup">
                         <div class="footerIcon">
-                            <img src="./assets/img/imgcards/footer_fasebook.svg" alt="">
-                            <img src="./assets/img/imgcards/footer_twiter.svg" alt="">
-                            <img src="./assets/img/imgcards/footer_instagram.svg" alt="">
+                            <img src="./assets/img/footer_fasebook.svg" alt="">
+                            <img src="./assets/img/footer_twiter.svg" alt="">
+                            <img src="./assets/img/footer_instagram.svg" alt="">
                         </div>
                         <div class="footerLanguage">Русский<span></span></div>
                     </div>
@@ -193,7 +210,7 @@
     </div>
 
 
-    <script src="./js/cards/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
