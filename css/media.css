@@ -152,9 +152,9 @@
         font-size: 12px;
     }
 
-    .popap__active .popap__body {
+    .popap__activeb {
         opacity: 1;
-        position: relative;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

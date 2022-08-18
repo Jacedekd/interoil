@@ -377,6 +377,9 @@ body {
 .active .arrow {
     transform: rotate(0deg);
 }
+.active img {
+    transform: rotate(180deg);
+}
 
 .arrow {
     transition: .4s;
@@ -996,10 +999,7 @@ img {
     visibility: hidden;
 }
 
-.popap__active {
-    opacity: 1;
-    visibility: inherit;
-}
+
 
 .popap__body {
     top: 8%;
@@ -1010,7 +1010,7 @@ img {
     border-radius: 24px;
     width: 500px;
     height: 580px;
-    z-index: 10;
+    z-index: 110;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1018,13 +1018,19 @@ img {
     transition: all .8s ease 0s;
     cursor: auto;
     opacity: 0;
-    transform: translate(0px, -120%);
+    visibility: hidden;
+    /* transform: translate(0px, -120%); */
 }
 
-.popap__active .popap__body {
-    transform: translate(0, 0);
+.popap__activeb  {
     opacity: 1;
+    visibility: inherit;
 }
+.popap__active  {
+    opacity: 1;
+    visibility: inherit;
+}
+
 
 .popap__close {
     position: absolute;
@@ -1070,6 +1076,7 @@ img {
     height: 45px;
     width: 100%;
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 .popap__btn {

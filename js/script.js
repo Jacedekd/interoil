@@ -47,16 +47,20 @@ const popap__active = () => {
   toolbarGroup2.classList.remove("is-active");
   toolbar__iconBlock.classList.remove("is-active");
   document.getElementById("menu-bg").classList.remove("change-bg");
+  popap__body.classList.add('popap__activeb');
 }
 
 const popap__notactive = () => {
   popap.classList.remove('popap__active');
   body.classList.remove('bodystop');
+  popap__body.classList.remove('popap__activeb');
 }
+
 signin.addEventListener('click', () => {
   popap__active();
 
 })
+
 // gp.addEventListener('click', () => {
 //   popap__active();
 // })
@@ -64,6 +68,10 @@ signin.addEventListener('click', () => {
 popap__close.addEventListener('click', () => {
   popap__notactive();
 })
+popap.addEventListener('click', () => {
+  popap__notactive();
+})
+
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -167,27 +175,31 @@ for (increment3 = 0; increment3 < acc3.length; increment3++) {
   });
 }
 let classificationAPI = document.querySelector('.classificationAPI');
+let classification__Title = document.querySelector('.classification__Title');
+
 let increment5;
 
-classificationAPI.addEventListener("click", function () {
-  this.classList.toggle("activeA");
+classification__Title.addEventListener("click", function () {
+  classificationAPI.classList.toggle("activeA");
 });
 
-let acc4 = document.getElementsByClassName("CFI3");
+let acc4 = document.querySelector(".CFI3");
+let acc4mode = document.querySelector(".CFI3mode");
 let increment4;
 
-for (increment4 = 0; increment4 < acc4.length; increment4++) {
-  acc4[increment4].addEventListener("click", function () {
-    this.classList.toggle("activeS");
-  });
-}
-let filter__brandGp = document.querySelector(".filter__brandGp");
 
-filter__brandGp.addEventListener("click", function () {
-  this.classList.toggle("activeF");
+  acc4mode.addEventListener("click", function () {
+    acc4.classList.toggle("activeS");
+  });
+
+let filter__brandGp = document.querySelector(".filter__brandGp");
+let filter__brand = document.querySelector(".filter__brand");
+
+filter__brand.addEventListener("click", function () {
+  filter__brandGp.classList.toggle("activeF");
 });
 
-filter__brandGp
+
 
 
 changeC.addEventListener('click', () => {
