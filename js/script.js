@@ -304,3 +304,28 @@ $(".img_svg").each(function () {
     $img.replaceWith($svg);
   }, "xml");
 });
+
+
+// let tags = document.querySelectorAll('#tags')
+// console.log(tags);
+// let ui;
+let content__block = document.querySelector('.content__block');
+
+function getSelectedText() {
+  var obj = document.querySelectorAll('.tag');
+  let i = 1;
+  for (i = 0; i < obj.length; i++) {
+    if (obj[i].checked) {
+      let text = obj[i].labels[0].innerText
+      let ttx = 'lll'
+      console.log(text);
+      content__block.appendChild(ttx)
+    } else {
+      // console.log( obj[i].innerText);
+    }
+  }
+  // console.log( obj[i].innerText);
+}
+
+// https://russianblogs.com/article/9774124959/
+
