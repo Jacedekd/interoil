@@ -533,7 +533,7 @@ img {
     max-height: 326px;
 }
 
-.classification___Boxtext {
+.classification___Boxtext, .classification___Boxtext3 {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -545,13 +545,9 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-
-    /* identical to box height, or 24px */
     display: flex;
     align-items: center;
     letter-spacing: 0.0275em;
-
-    /* Gray / 100 */
     color: #19191D;
 }
 
@@ -751,6 +747,7 @@ img {
 .contentTeg {
     display: flex;
     column-gap: 20px;
+    height: 32.02px
 }
 
 .content__blockText {
@@ -769,6 +766,7 @@ img {
     border-radius: 99px;
     display: flex;
     column-gap: 5px;
+    cursor: pointer;
 }
 
 .content__blockText span {
@@ -1539,6 +1537,7 @@ img {
 /* form starting stylings ------------------------------- */
 .group {
     position: relative;
+    cursor: pointer;
 }
 
 .group:nth-child(2) {
@@ -1559,6 +1558,7 @@ img {
     border: 1px solid #B4B4BB;
     transition: .3s;
     outline: none;
+    cursor: pointer
 
 }
 
@@ -1584,7 +1584,7 @@ img {
 }
 
 /* active state */
-.groupInput:focus~.groupLabel,
+/* .groupInput:focus~.groupLabel, */
 .groupInput:valid~.groupLabel {
     top: -13px;
     font-size: 14px;
@@ -1824,4 +1824,10 @@ img {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.contentTeg {
+    max-width: 452.42px;
+    overflow-x: auto;
+    background-color: #005287;
 }
