@@ -747,7 +747,7 @@ img {
 .contentTeg {
     display: flex;
     column-gap: 20px;
-    height: 32.02px
+    min-height: 32.02px
 }
 
 .content__blockText {
@@ -1829,5 +1829,4 @@ img {
 .contentTeg {
     max-width: 452.42px;
     overflow-x: auto;
-    background-color: #005287;
 }
