@@ -99,8 +99,12 @@ sortiv_num2.addEventListener("click", () => {
   sort_Crug.innerHTML = "24";
 });
 sortiv.addEventListener("click", () => {
+  setTimeout(() => {
+    sort_Crug.innerHTML = "Показать всё";
+  }, 200)
+  
   sort_Crug.style.margin = "0px";
-  sort_Crug.innerHTML = "Показать всё";
+  
 });
 
 let acc = document.getElementsByClassName("filter__Item");
@@ -278,4 +282,28 @@ for (let checkbox of checkboxes) {
       listArray.splice(index, 1);
     }
   });
+}
+
+for (let e of checkboxes) {
+  e.onchange = changeTag;
+
+  let div  = document.createElement("div");
+  let span = document.createElement("span");
+
+  div.innerText = e.value;
+  div.classList.add("ltag");
+  span.classList.add("lspan");
+  span.innerText = '';
+  span.onclick = function() {
+    hidden.append(this.parentNode);
+    e.checked = false;
+  };
+  div.append(span);
+
+  e.target = div;
+  e.checked ? checked.append(div) : hidden.append(div);
+}
+
+function changeTag() {
+  this.checked ? checked.append(this.target) : hidden.append(this.target);
 }
