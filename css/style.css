@@ -26,6 +26,13 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(../assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
 *,
 *:before,
 *:after {
@@ -1862,6 +1869,7 @@ img {
     position: relative;
     transform: translateY(-3px);
 }
+
 .lspan::before {
     position: absolute;
     top: 0;
@@ -1874,6 +1882,7 @@ img {
     height: 8.4px;
     display: block;
 }
+
 .lspan::after {
     position: absolute;
     top: 0;
@@ -1900,6 +1909,7 @@ img {
 .check-group label {
     display: block;
 }
+
 #checked {
     display: flex;
     column-gap: 10px;
@@ -1907,9 +1917,103 @@ img {
     max-width: 430px;
     overflow-x: auto;
     padding-bottom: 14px;
+    min-height: 47px;
 }
+
 #taglist {
     display: flex;
     column-gap: 20px;
     min-height: 32.02px
+}
+
+.aboutUs__headerUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.aboutUs__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.aboutUs .backgroundImg {
+    margin-bottom: 30px;
+}
+
+.aboutUs__headerUpText {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    max-width: 710px;
+}
+
+.aboutUs__headerFlex {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 50px;
+}
+
+.aboutUs__headerFlexTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+/* .aboutUs__headerFlexDesc {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+} */
+
+.aboutUs__table {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 45px;
+    padding: 75px 0;
+}
+
+.aboutUs__tableGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    max-width: 285px;
+    row-gap: 20px;
+
+}
+
+.aboutUs__tableGroup span {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    color: #005287;
+}
+
+.aboutUs__video iframe {
+    /* width: 100%; */
 }
