@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="image/x-icon" href="./assets/img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popap">
+        </div>
+        <div class="popap__body">
+            <div class="popap__close"><img src="./assets/img/close.svg" alt=""></div>
+            <div class="popa__Title">Авторизация</div>
+            <label class="emaillabel" for="email">Email или номер телефона</label>
+            <input class="popap__input" type="text" id="email">
+            <div class="popap__passwordBlock">
+                <label for="password">Пароль</label>
+                <div class="popap__hide">
+                    <img src="./assets/img/passwordicon.svg" alt="">
+                    <span>Скрыть</span>
+                </div>
+            </div>
+            <input class="popap__input" type="password" id="password">
+            <button class="popap__btn">Войти</button>
+            <div class="popap__group">
+                <div class="popap__flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Запомнить данные</span>
+                </div>
+                <div class="popap__help">Нужна помощь?</div>
+            </div>
+            <div class="popap__registration">Нет учётной записи? <a href="./registration.html">Регистрация</a></div>
+        </div>
+        <nav class="toolbar">
+            <div class="toolbar__Top">
+                <div class="toolbar__container">
+                    <div class="toolbarGroup">
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/phone.svg" alt="">
+                            <span>+77071234567</span>
+                        </div>
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/mail.svg" alt="">
+                            <span>info@interoil.com</span>
+                        </div>
+                        <img src="./assets/img/fasebook.svg" alt="">
+                        <img src="./assets/img/instagram.svg" alt="">
+                    </div>
+                    <div class="toolbarGroup2">
+                        <div class="language">
+                            <div class="language_En">ENG</div>
+                            <div class="language_Ru">RU</div>
+                            <div class="language_Togler"></div>
+                        </div>
+                        <div class="toolbarblock">
+                            <img src="./assets/img/geo.svg" alt="">
+                            <span>Алматы</span>
+                            <span class="span"></span>
+                        </div>
+                        <div class="toolbarblock signin">
+                            <img src="./assets/img/signIn.svg" alt="">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar__Bottom">
+                <div class="toolbar__container">
+                    <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
+                    <div class="toolbar__block">
+                        <ul>
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="./">КАТАЛОГ</a></li>
+                            <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                            <li><a href="./aboutUs.html">О НАС</a></li>
+                            <li><a href="./jobvacancy.html">ВАКАНСИИ</a></li>
+                            <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                    <div class="toolbar__iconBlock">
+                        <img class="img_svg" src="./assets/img/toolbar__search.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__like.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__bag.svg" alt="">
+                    </div>
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+
+        </nav>
+        <div class="backgroundImg d-flex align-items-center">
+            <div class="toolbar__container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- <div class="vacancy__container">
+            <header class="header__vacancy">
+                <div class="vacancy__Group1">
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel1">
+                        <label class="radio__label" for="vacancylabel1"
+                            value="Менеджер по продажам корпоративным клиентам">Менеджер по продажам корпоративным
+                            клиентам</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel2">
+                        <label class="radio__label" for="vacancylabel2" value="Аналитик">Аналитик</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel3">
+                        <label class="radio__label" for="vacancylabel3" value="Финансовый менджер">Финансовый
+                            менджер</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel4">
+                        <label class="radio__label" for="vacancylabel4" value="Экономист">Экономист</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel5">
+                        <label class="radio__label" for="vacancylabel5" value="Начальник склада">Начальник
+                            склада</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel6">
+                        <label class="radio__label" for="vacancylabel6" value="Водитель">Водитель</label>
+                    </div>
+                    <div class="vacancy__radio">
+                        <input class="radio__input" type="radio" name="vacancy" id="vacancylabel7">
+                        <label class="radio__label" for="vacancylabel7" value="Грузчик">Грузчик</label>
+                    </div>
+                </div>
+                <div class="vacancy__Group2">
+                    <div class="vacancy__GroupTitle">Менеджер по продажам корпоративным клиентам</div>
+                    <div class="vacancy__GroupGrid">
+                        <div class="vacancy__GroupItem">
+                            <div class="vacancy__GroupItemtitle">Обязанности</div>
+                            <ul>
+                                <li>
+                                    Поиск новых потенциальных клиентов, рынков сбыта, каналов продаж. Создание базы
+                                    данных;
+                                </li>
+                                <li>
+                                    Выполнение плана продаж;
+                                </li>
+                                Изучение нужд потенциальных клиентов;
+                                </li>
+                                Ведение коммерческих переговоров с клиентами в интересах компании.
+                                </li>
+                                Развитие отношений с существующими клиентами.
+                                </li>
+                                <li>
+                                    Своевременное предоставление отчетности, утверждение компанией и Поставщиком;
+                                </li>
+                                <li>
+                                    Участие в открытых конкурсах, тендерах.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vacancy__GroupItem">
+                            <div class="vacancy__GroupItemtitle"> Требования</div>
+                            <ul>
+                                <li>
+                                    Высшее техническое образование;
+                                </li>
+                                <li>
+                                    Опыт не менее 2-х лет на аналогичной должности;
+                                </li>
+                                Умение вести переговоры;
+                                </li>
+                                Навыки продаж;
+                                </li>
+                                Знание 1С, MS office;
+                                </li>
+                                <li>
+                                    Нацеленность на результат, инициативность, исполнительность
+                                </li>
+                                <li>
+                                    Пунктуальность, ответственность, стрессоустойчивость;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vacancy__GroupItem">
+                            <div class="vacancy__GroupItemtitle">Мы предлагаем</div>
+                            <ul>
+                                <li>
+                                    Отличный коллектив;
+                                </li>
+                                <li>
+                                    Работу в стабильной компании;
+                                </li>
+                                Стабильную зарплату, ежемесячную бонусную систему мотивации по результатам работы;
+                                </li>
+                                Пятидневную рабочую неделю, с 9.00.до 18.00, обеденный перерыв;
+                                </li>
+                                Развитие отношений с существующими клиентами.
+                                </li>
+                                <li>
+                                    Официальное трудоустройство;
+                                </li>
+                                <li>
+                                    Быстрый рост по карьерной лестнице
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vacancy__GroupForm">
+                            <input type="text" placeholder="Ваше ФИО">
+                            <input type="tel" placeholder="Номер телефона">
+                            <input type="text" placeholder="Эл.почта">
+                            <div class="vacancy__fileBlock">
+                                <div class="vacancy__file">
+                                    <input type="file" name="" id="vacancy__file1">
+                                    <label for="vacancy__file1">Выбрать файл</label>
+                                    <span>Прикрепите резюме</span>
+                                </div>
+                                <div class="vacancy__file">
+                                    <input type="file" name="" id="vacancy__file2">
+                                    <label for="vacancy__file2">Выбрать файл</label>
+                                    <span>Прикрепите фото</span>
+                                </div>
+                            </div>
+                            <button class="vacancy__btn">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div> -->
+        <div class="vacancy_container">
+            <header class="header_vacancy">
+                <div class="header__vacancyTitle">Менеджер по продажам корпоративным клиентам</div>
+                <div class="header__vacancyFlex">
+                    <div class="header__vacancyFlexItem">
+                        <div class="header__vacancyFlexTitle">Описание должности</div>
+                        <div class="header__vacancyFlexDesc">Работа в современном офисе, Алматы, 8:00 - 17:00</div>
+                    </div>
+                    <div class="header__vacancyFlexItem">
+                        <div class="header__vacancyFlexTitle">Заработная плата</div>
+                        <div class="header__vacancyFlexDesc">Договорная </div>
+                    </div>
+                </div>
+                <div class="vacancy__cards">
+                    <div class="vacancy__cardsItem">
+                        <div class="vacancy__cardsItemTitle">Обязанности</div>
+                        <div class="vacancy__cardsItemTitle">Требования</div>
+                        <div class="vacancy__cardsItemTitle">Мы предлагаем</div>
+                    </div>
+                    <ul class="vacancy__cardsItem2">
+                        <li>Поиск новых потенциальных клиентов, рынков сбыта, каналов продаж. Создание базы данных;
+                        </li>
+                        <li>Выполнение плана продаж; </li>
+                        <li>Изучение нужд потенциальных клиентов;</li>
+                        <li>Ведение коммерческих переговоров с клиентами в интересах компании.</li>
+                        <li>Развитие отношений с существующими клиентами.</li>
+                        <li>Своевременное предоставление отчетности, утверждение компанией и Поставщиком;</li>
+                        <li>Участие в открытых конкурсах, тендерах.</li>
+                    </ul>
+                </div>
+            </header>
+            <form class="vacancy__form">
+                <div class="vacancy__formTitle">Заполните форму</div>
+                <div class="vacancy__formGrid">
+                    <input type="text" placeholder="Введите имя">
+                    <input type="text" placeholder="Введите фамилия">
+                    <input type="email" placeholder="Email ">
+                    <input type="tel" placeholder="Номер телефона">
+                    <textarea name="" id="" placeholder="Расскажите о себе"></textarea>
+                </div>
+                <button class="vacanccy__formBtn">Отправить</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Продукция</div>
+                            <div class="footerText">Моторные масла</div>
+                            <div class="footerText">Коммерческие масла</div>
+                            <div class="footerText">Трансмиссионные масла</div>
+                            <div class="footerText">Пластичные смазки</div>
+                            <div class="footerText">Охлаждающие жидкости</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Компания </div>
+                            <div class="footerText">О нас</div>
+                            <div class="footerText">Новости</div>
+                            <div class="footerText">Мероприятия</div>
+                            <div class="footerText">Наши клиенты</div>
+                            <div class="footerText">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Поддержка</div>
+                            <div class="footerText">Связаться с нами</div>
+                            <div class="footerText">Помощь</div>
+                            <div class="footerText">Публичная оферта</div>
+                            <div class="footerText">Карта сайта</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Информация</div>
+                            <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
+                            <div class="footerText">E-mail: office@interoil.kz</div>
+                            <div class="footerText">Телефон: +7 (727) 321 04 67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__Bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <div class="footer__Bottomtext">© interoil 2022</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__BottomGroup">
+                            <div class="footerIcon">
+                                <img src="./assets/img/footer_fasebook.svg" alt="">
+                                <img src="./assets/img/footer_twiter.svg" alt="">
+                                <img src="./assets/img/footer_instagram.svg" alt="">
+                            </div>
+                            <div class="footerLanguage">Русский<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

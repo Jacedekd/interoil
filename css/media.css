@@ -418,6 +418,7 @@
     .checkbox {
         width: 14px !important;
     }
+
     .registration .popap__passwordBlock {
         width: 86vw;
     }
@@ -443,4 +444,73 @@
         padding-left: 20px;
     }
 
+}
+
+
+@media screen and (max-width: 1190px) {
+    .header__contactImg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header__contactImg {
+        
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .content___contactGroup {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contactsNumGroup {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content___contactGroup {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .content___contactflex {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content___contactGroup {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .content___contactflex {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .header__contactTitle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactsNumGroup {
+        flex-direction: column;
+    }
+
+    .content___contactflex {
+        padding-left: 25px;
+        padding-right: 5px;
+    }
+
+    .header__contactTitle {
+        font-size: 25px;
+    }
+
+    .header__contact {
+        margin-bottom: 10px;
+    }
 }

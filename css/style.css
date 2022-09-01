@@ -2084,8 +2084,8 @@ img {
     padding: 50px 0;
     background: #F2F2F2;
     border-bottom: 50px solid #fff;
-    
 }
+
 .aboutUs__connectConteiner {
     display: flex;
     justify-content: space-around;
@@ -2152,5 +2152,576 @@ img {
     color: #F2F2F2;
     padding: 10px 0;
 
+
+}
+
+.header__contactTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.header__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content___contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.content___contactflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.content___contactGroup {
+    display: flex;
+    column-gap: 200px;
+    align-items: flex-start;
+}
+
+.content___contactItem {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content___contactItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content___contactItem span {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.contactsNumGroup {
+    display: flex;
+    column-gap: 50px;
+}
+
+.contactsNum li {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.contactsNumGroup2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content___contactItemAders {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content___contactItemDesc,
+.content___contactItemTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content__addresses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contact__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content__addressesItemTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.content__addressesItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.content__addressesItem ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.content__addressesItem ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.content__addressesMap {
+    width: 750px;
+    height: 465px;
+}
+
+.content__addressesMap iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contant__questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.contant__questionsTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 140%;
+    text-align: center;
+    color: #111827;
+}
+
+.contant__questionsDesc {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #6D7280;
+    margin-bottom: 20px;
+}
+
+.contant__questionsContainer {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.contactconnect {
+    background: #006399;
+
+}
+
+.contactcolor {
+    color: #fff;
+}
+
+.contactBtn button {
+    background-color: #fff;
+    color: #006399;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.vacancy__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header__vacancy {
+    display: flex;
+    align-content: flex-start;
+    padding: 20px 0 50px 0;
+    column-gap: 40px;
+}
+
+.vacancy__Group1 {
+    width: 366px;
+    padding: 40px 10px 40px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    max-height: 515px;
+}
+
+.vacancy__radio {
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+}
+
+.radio__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+
+}
+
+.vacancy__radio label {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding-left: 35px;
+}
+
+.vacancy__radio label::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s;
+
+}
+
+.vacancy__radio label::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #005287;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.radio__input:checked+.radio__label::before {
+    /* background-color: #005287; */
+}
+
+.radio__input:checked+.radio__label::after {
+    opacity: 1;
+}
+
+.vacancy__GroupGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.vacancy__Group2 {
+    background: #005287;
+    border-radius: 10px;
+    Width: 916px;
+    Height: 945px;
+    padding: 30px 20px;
+}
+
+.vacancy__GroupTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.vacancy__GroupItem {
+    max-width: 400px;
+    color: #fff;
+}
+
+.vacancy__GroupItem ul {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.vacancy__GroupItemtitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.vacancy__GroupForm {
+    max-width: 385px;
+
+}
+
+.vacancy__GroupForm input {
+    background-color: #005287;
+    border: 1px solid #fff;
+    width: 100%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+}
+
+.vacancy__fileBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vacancy__file {
+    display: flex;
+}
+
+.vacancy__GroupForm input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.vacancy__GroupForm input[type=file]+label {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.vacancy__file {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.vacancy__file span {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.vacancy__btn {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #D36601;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 50px;
+    display: flex;
+    margin: 30px auto 0 auto;
+}
+
+
+
+/*  */
+
+.vacancy_container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header__vacancyTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #005287;
+}
+
+.header__vacancyFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.header__vacancyFlexItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.header__vacancyFlexTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #0D1317;
+}
+
+.header__vacancyFlexDesc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #5B5B5B;
+}
+
+.vacancy__cards {
+    background: rgba(193, 228, 255, 0.3);
+    border-radius: 20px;
+    width: 100%;
+    height: 420px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+.vacancy__cardsItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.vacancy__cardsItemTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #535456;
+}
+
+.vacancy__cardsItemTitle:nth-child(1) {
+    color: #D36601;
+}
+
+.vacancy__cardsItem2 {
+    max-width: 739px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.vacancy__form {
+    margin-bottom: 50px;
+
+}
+.vacancy__formTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    color: #535456;
+    margin-bottom: 50px;
+}
+
+.vacancy__formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.vacancy__formGrid input {
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 8px;
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9C9C9C;
+    border: none;
+    padding: 15px 0 15px 25px;
+}
+
+.vacancy__formGrid textarea {
+    grid-column: 1 / 3;
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 8px;
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9C9C9C;
+    border: none;
+    padding: 15px 0 150px 25px;
+    margin-bottom: 50px;
+    resize: none;
+}
+
+.vacanccy__formBtn {
+    background: #005287;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 106.5%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
 
 }

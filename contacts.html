@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Document</title>
     <link type="image/x-icon" href="./assets/img/favicon.png" rel="shortcut icon">
     <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="popap">
@@ -80,7 +84,7 @@
                             <li><a href="./">КАТАЛОГ</a></li>
                             <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
                             <li><a href="./aboutUs.html">О НАС</a></li>
-                            <li><a href="#">ВАКАНСИИ</a></li>
+                            <li><a href="./jobvacancy.html">ВАКАНСИИ</a></li>
                             <li><a href="./contacts.html">КОНТАКТЫ</a></li>
                         </ul>
                     </div>
@@ -110,6 +114,221 @@
                 </nav>
             </div>
         </div>
+        <header class="header__contact">
+            <div class="header__contactTitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
+            <div class="header__contactImg">
+                <img src="./assets/img/contacts/header__contact.svg" alt="">
+            </div>
+        </header>
+        <div class="content___contact">
+            <div class="content___contactflex">
+                <div class="content___contactGroup">
+                    <div class="content___contactItem">
+                        E-mail: <span>office@interoil.kz</span>
+                    </div>
+                    <div class="content___contactItem">
+                        Номера для справок:
+                        <div class="contactsNumGroup">
+                            <div class="contactsNum">
+                                <li>+7 (727) 321‒04‒68</li>
+                                <li>+7 (727) 321‒03‒87</li>
+                            </div>
+                            <div class="contactsNum">
+                                <li>+7 (727) 347‒03‒18</li>
+                                <li>+7‒701‒951‒84‒02</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content___contactGroup2">
+                    <div class="content___contactItemAders">Адрес:</div>
+                    <div class="content___contactItemTitle">ТОО «INTEROIL»</div>
+                    <div class="content___contactItemDesc">(головной офис) г. Алматы, проспект Н,Назарбаева, 223, блок
+                        2б</div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="contact__container">
+            <div class="content__addresses">
+                <div class="content__addressesItem">
+                    <div class="content__addressesItemTitle">другие адреса:</div>
+                    <ul>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Атырау</li>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Кызылорда</li>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Тараз</li>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Шымкент</li>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Сарыагаш</li>
+                        <li><img src="./assets/img/contacts/contact__adressIcon.svg" alt="">г. Туркестан</li>
+                    </ul>
+                </div>
+                <div class="content__addressesMap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11692.945021090683!2d74.6048946!3d42.8889619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7ec09772be9%3A0xf0f26713796a77ca!2s!5e0!3m2!1sru!2skg!4v1661765061862!5m2!1sru!2skg"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="contant__questions">
+            <div class="contant__questionsTitle">Часто задаваемые вопросы</div>
+            <div class="contant__questionsDesc">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus
+                vestibulum, facilisi ac, sed faucibus.</div>
+                <div class="contant__questionsContainer">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Один из задаваемых вопросов
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna. Aliquam diam integer vitae eget. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Один из задаваемых вопросов
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna. Aliquam diam integer vitae eget. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Один из задаваемых вопросов
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna. Aliquam diam integer vitae eget. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Один из задаваемых вопросов
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna. Aliquam diam integer vitae eget. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Один из задаваемых вопросов
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim lorem hac a ultricies. Id ornare turpis vulputate enim sed magna sit. A id cursus dolor urna. Aliquam diam integer vitae eget. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="aboutUs__connect contactconnect">
+            <div class="aboutUs__connectConteiner">
+                <div class="aboutUs__connectItem">
+                    <div class="aboutUs__connectTitle contactcolor">Связаться с нами</div>
+                    <div class="aboutUs__connectDesc contactcolor">Остались вопросы? Оставьте заявку для получения консультации</div>
+                </div>
+                <form class="aboutUs__connectForm contactBtn">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <button>Отправить</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Продукция</div>
+                            <div class="footerText">Моторные масла</div>
+                            <div class="footerText">Коммерческие масла</div>
+                            <div class="footerText">Трансмиссионные масла</div>
+                            <div class="footerText">Пластичные смазки</div>
+                            <div class="footerText">Охлаждающие жидкости</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Компания </div>
+                            <div class="footerText">О нас</div>
+                            <div class="footerText">Новости</div>
+                            <div class="footerText">Мероприятия</div>
+                            <div class="footerText">Наши клиенты</div>
+                            <div class="footerText">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Поддержка</div>
+                            <div class="footerText">Связаться с нами</div>
+                            <div class="footerText">Помощь</div>
+                            <div class="footerText">Публичная оферта</div>
+                            <div class="footerText">Карта сайта</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Информация</div>
+                            <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
+                            <div class="footerText">E-mail: office@interoil.kz</div>
+                            <div class="footerText">Телефон: +7 (727) 321 04 67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__Bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <div class="footer__Bottomtext">© interoil 2022</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__BottomGroup">
+                            <div class="footerIcon">
+                                <img src="./assets/img/footer_fasebook.svg" alt="">
+                                <img src="./assets/img/footer_twiter.svg" alt="">
+                                <img src="./assets/img/footer_instagram.svg" alt="">
+                            </div>
+                            <div class="footerLanguage">Русский<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
+
+    <script src="./assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

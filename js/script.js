@@ -102,9 +102,9 @@ sortiv.addEventListener("click", () => {
   setTimeout(() => {
     sort_Crug.innerHTML = "Показать всё";
   }, 200)
-  
+
   sort_Crug.style.margin = "0px";
-  
+
 });
 
 let acc = document.getElementsByClassName("filter__Item");
@@ -199,7 +199,7 @@ let imgsrc = function (imgList, transform) {
   viewChange.style = transform;
 };
 
-viewList.addEventListener("click", () => { 
+viewList.addEventListener("click", () => {
   imgsrc('./assets/img/viewlistorange.svg', "transform: translate(0px)");
 });
 
@@ -235,26 +235,26 @@ $(".group .dropdown-menu li").click(function () {
   $(this).parents(".group").find("input").attr("value", $(this).attr("id"));
 });
 
-$(".img_svg").each(function () {
-  var $img = $(this);
-  var imgClass = $img.attr("class");
-  var imgURL = $img.attr("src");
-  $.get(
-    imgURL,
-    function (data) {
-      var $svg = $(data).find("svg");
-      if (typeof imgClass !== "undefined") {
-        $svg = $svg.attr("class", imgClass + " replaced-svg");
-      }
-      $svg = $svg.removeAttr("xmlns:a");
-      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-        $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
-      }
-      $img.replaceWith($svg);
-    },
-    "xml"
-  );
-});
+// $(".img_svg").each(function () {
+//   var $img = $(this);
+//   var imgClass = $img.attr("class");
+//   var imgURL = $img.attr("src");
+//   $.get(
+//     imgURL,
+//     function (data) {
+//       var $svg = $(data).find("svg");
+//       if (typeof imgClass !== "undefined") {
+//         $svg = $svg.attr("class", imgClass + " replaced-svg");
+//       }
+//       $svg = $svg.removeAttr("xmlns:a");
+//       if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+//         $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
+//       }
+//       $img.replaceWith($svg);
+//     },
+//     "xml"
+//   );
+// });
 
 let content__blockText = document.querySelector(".content__blockText");
 let content__blockTextspan = document.querySelector(".content__blockText span");
@@ -287,14 +287,14 @@ for (let checkbox of checkboxes) {
 for (let e of checkboxes) {
   e.onchange = changeTag;
 
-  let div  = document.createElement("div");
+  let div = document.createElement("div");
   let span = document.createElement("span");
 
   div.innerText = e.value;
   div.classList.add("ltag");
   span.classList.add("lspan");
   span.innerText = '';
-  span.onclick = function() {
+  span.onclick = function () {
     hidden.append(this.parentNode);
     e.checked = false;
   };
