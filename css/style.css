@@ -2014,9 +2014,10 @@ img {
     color: #005287;
 }
 
-.aboutUs__video iframe {
+.aboutUs__videoItem {
     width: 100%;
-    height: 560px;
+    height: 550px;
+    border: 1px solid #ccc;
 }
 
 .aboutUs__values {

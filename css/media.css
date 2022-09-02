@@ -109,7 +109,15 @@
         height: 120px;
     }
 }
-
+@media screen and (max-width: 1150px) {
+    .aboutUs__valuesFlex {
+        flex-direction: column;
+    }
+    .aboutUs__valuesItem {
+        width: 80vw;
+        height: auto;
+    }
+}
 @media screen and (max-width: 720px) {
     .toolbarnumBlock span {
         display: none;
@@ -217,6 +225,44 @@
     }
 }
 
+@media screen and (max-width: 1160px) {
+    .aboutUs__headerFlex {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .aboutUs__headerFlexTitle {
+        font-size: 29px;
+    }
+
+    .aboutUs__headerFlexText {
+        max-width: 90%;
+    }
+
+    .aboutUs__headerFlexImg {
+        transform: scale(90%);
+    }
+
+    .aboutUs__headerFlexImg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .aboutUs__table {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 45px;
+        padding: 75px 0;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        gap: 20px;
+      }
+}
+
 @media screen and (max-width: 1094px) {
     .swiper__Cards {
         padding-top: 30px;
@@ -273,7 +319,16 @@
         color: #fff;
     }
 }
-
+@media screen and (max-width: 875px) { 
+    .aboutUs__table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .aboutUs__tableGroup {
+        max-width: 90vw;
+      }
+}
 @media screen and (max-width: 722px) {
     .swiper {
         width: 90%;
@@ -494,6 +549,22 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .aboutUs__headerUpLogo {
+        transform: scale(80%);
+    }
+
+    .aboutUs__headerUpLogo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutUs__headerUpText {
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width: 1155px) {
     .vacancy__Group1 {
         grid-template-columns: 1fr 1fr;
@@ -532,6 +603,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+    }
+
+    .aboutUs__headerUp {
+        row-gap: 5px;
     }
 
     .content__addressesItem {
@@ -616,12 +691,17 @@
     .aboutUs__connectItem {
         width: 70vw;
     }
+
+    .aboutUs__headerUpText {
+        font-size: 20px;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 615px) {
     .vacancy__Group1 {
-        grid-template-columns: 1fr;  
-      }
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 550px) {
