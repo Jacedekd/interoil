@@ -2343,6 +2343,7 @@ img {
     width: 800px;
     margin: 0 auto;
     margin-bottom: 80px;
+    padding: 0 10px;
 }
 
 .contactconnect {
@@ -2408,6 +2409,7 @@ textarea:focus {
     font-size: 18px;
     color: #000000;
     padding-left: 35px;
+    cursor: pointer;
 }
 
 .vacancy__radio label::before {
@@ -2459,8 +2461,7 @@ textarea:focus {
 .vacancy__Group2 {
     background: #005287;
     border-radius: 10px;
-    Width: 916px;
-    Height: 945px;
+    width: 916px;
     padding: 30px 20px;
 }
 
@@ -2553,7 +2554,7 @@ textarea:focus {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
