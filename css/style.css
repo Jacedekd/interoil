@@ -2015,9 +2015,11 @@ img {
 }
 
 .aboutUs__videoItem {
-    width: 100%;
-    height: 550px;
-    border: 1px solid #ccc;
+  width: 100%;
+  height: auto;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  object-fit: contain;
 }
 
 .aboutUs__values {
@@ -2730,4 +2732,17 @@ textarea:focus {
 
 .oh {
     overflow: hidden;
+}
+
+.vacancyinput::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+.vacancyinput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+.vacancyinput::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+.vacancyinput:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
 }
