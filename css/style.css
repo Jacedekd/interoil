@@ -2727,3 +2727,7 @@ textarea:focus {
     border: none;
 
 }
+
+.oh {
+    overflow: hidden;
+}

@@ -15,13 +15,10 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
   ul.classList.toggle("is-active");
   toolbar__iconBlock.classList.toggle("is-active");
-  // popap__body.classList.add('popapPosition');
-
+  document.querySelector("body").classList.toggle("oh");
   document.getElementById("menu-bg").classList.toggle("change-bg");
   toolbarGroup2.classList.toggle("is-active");
 });
-
-// let gp = document.querySelector('.rsignin');
 
 let signin = document.querySelector(".signin");
 let popap = document.querySelector(".popap");
@@ -50,9 +47,6 @@ signin.addEventListener("click", () => {
   popap__active();
 });
 
-// gp.addEventListener('click', () => {
-//   popap__active();
-// })
 
 popap__close.addEventListener("click", () => {
   popap__notactive();
@@ -235,26 +229,26 @@ $(".group .dropdown-menu li").click(function () {
   $(this).parents(".group").find("input").attr("value", $(this).attr("id"));
 });
 
-// $(".img_svg").each(function () {
-//   var $img = $(this);
-//   var imgClass = $img.attr("class");
-//   var imgURL = $img.attr("src");
-//   $.get(
-//     imgURL,
-//     function (data) {
-//       var $svg = $(data).find("svg");
-//       if (typeof imgClass !== "undefined") {
-//         $svg = $svg.attr("class", imgClass + " replaced-svg");
-//       }
-//       $svg = $svg.removeAttr("xmlns:a");
-//       if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-//         $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
-//       }
-//       $img.replaceWith($svg);
-//     },
-//     "xml"
-//   );
-// });
+$(".img_svg").each(function () {
+  var $img = $(this);
+  var imgClass = $img.attr("class");
+  var imgURL = $img.attr("src");
+  $.get(
+    imgURL,
+    function (data) {
+      var $svg = $(data).find("svg");
+      if (typeof imgClass !== "undefined") {
+        $svg = $svg.attr("class", imgClass + " replaced-svg");
+      }
+      $svg = $svg.removeAttr("xmlns:a");
+      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+        $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
+      }
+      $img.replaceWith($svg);
+    },
+    "xml"
+  );
+});
 
 let content__blockText = document.querySelector(".content__blockText");
 let content__blockTextspan = document.querySelector(".content__blockText span");

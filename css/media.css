@@ -70,7 +70,7 @@
     .menu-bg {
         top: 40px;
         right: 40px;
-        position: absolute;
+        position: fixed;
         z-index: 10;
         width: 0;
         height: 0;
@@ -107,6 +107,12 @@
 
     .backgroundImg {
         height: 120px;
+    }
+    .img_svg path {
+        stroke: #fff;
+    }
+    .img_svg:nth-child(3) path {
+        fill: #fff;
     }
 }
 @media screen and (max-width: 1150px) {
@@ -376,7 +382,17 @@
 
     }
 }
-
+@media screen and (max-width: 415px) {
+    .footer__Bottom .container .row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .footer__Bottom .container .row .col div {
+        display: flex;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 404px) {
     .swiper__CardsDesc {
         font-size: 16px;
