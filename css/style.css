@@ -2466,8 +2466,12 @@ textarea:focus {
     border-radius: 10px;
     width: 916px;
     padding: 30px 20px;
+    display: none;
 }
 
+.vacancy__active {
+    display: block;
+}
 .vacancy__GroupTitle {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
