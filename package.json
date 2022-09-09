@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "swiper": "^8.3.2"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.27.10"
-  }
-}
