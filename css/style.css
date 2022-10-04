@@ -38,7 +38,8 @@
 *:after {
     -webkit-border-sizing: border-box;
     -moz-border-sizing: border-box;
-    border-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -855,15 +856,49 @@ img {
 }
 
 .swiper {
-    width: 90%;
-    height: 380px;
+    width: 95%;
+    /* height: 380px; */
+    height: 540px;
     margin-bottom: 50px;
 
+}
+
+.headerMain {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.swiper2 {
+    width: 100%;
+    height: 540px;
+    margin-bottom: 50px;
+}
+
+.swright {
+    margin-left: 70px;
+}
+
+.swleft {
+    margin-right: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }
 
 .swiper__Img {
     object-fit: cover;
     height: 100%;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    color: #D36601;
+    font-size: 22px;
+    border: 1px solid #535456;
+    border-radius: 50%;
+    padding: 10px 15px;
 }
 
 .swiper__Cards {
@@ -1968,18 +2003,19 @@ img {
     display: flex;
     align-items: center;
     color: #000000;
+    margin-bottom: 20px;
 }
 
-/* .aboutUs__headerFlexDesc {
+.aboutUs__headerFlexDesc {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 21px;
     line-height: 25px;
     display: flex;
     align-items: center;
     color: #000000;
-} */
+}
 
 .aboutUs__table {
     display: flex;
@@ -2015,11 +2051,11 @@ img {
 }
 
 .aboutUs__videoItem {
-  width: 100%;
-  height: auto;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    object-fit: contain;
 }
 
 .aboutUs__values {
@@ -2472,6 +2508,7 @@ textarea:focus {
 .vacancy__active {
     display: block;
 }
+
 .vacancy__GroupTitle {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
@@ -2670,10 +2707,12 @@ textarea:focus {
     flex-direction: column;
     row-gap: 10px;
 }
+
 .vacancy__form {
     margin-bottom: 50px;
 
 }
+
 .vacancy__formTitle {
     font-style: normal;
     font-weight: 600;
@@ -2738,15 +2777,457 @@ textarea:focus {
     overflow: hidden;
 }
 
-.vacancyinput::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #fff;
+.vacancyinput::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
 }
-.vacancyinput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #fff;
+
+.vacancyinput:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
 }
-.vacancyinput::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #fff;
+
+.vacancyinput::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
 }
-.vacancyinput:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #fff;
+
+.vacancyinput:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+.swiper-pagination {
+    bottom: -4px;
+}
+
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    margin: 70px auto 10px auto;
+    width: 100%;
+
+}
+
+.swiperMainTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.swiperMainDesc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-bottom: 50px;
+}
+
+.twoMain {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.05), 0px 5px 4px rgba(0, 0, 0, 0.05), 0px 4px 20px rgba(148, 148, 148, 0.1);
+    border-radius: 10px;
+    width: 1000px;
+    margin: 100px auto;
+
+}
+
+.twoMainItem {
+    display: flex;
+    align-items: center;
+    padding: 24px 102px;
+    column-gap: 10px;
+    cursor: pointer;
+
+}
+
+.twoMainItem:not(:last-child) {
+    border-right: 1px solid #87898d;
+}
+
+.Benefits {
+    padding: 50px 0;
+}
+
+.BenefitsTitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 28px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 50px;
+}
+
+.BenefitsGrid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    gap: 15px;
+    column-gap: 30px;
+}
+
+.BenefitsItem {
+    width: 420px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 10px #E1E1EF;
+    border-radius: 15px;
+    display: flex;
+    column-gap: 20px;
+    padding: 40px 15px;
+}
+
+.BenefitsSubTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+.BenefitsSubDesc {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.productCatalog {
+    padding: 50px 0;
+}
+
+.productCatalog__Title {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+    color: #1A1A1A;
+}
+
+.productCatalogGrid {
+    display: grid;
+    grid-template-columns: 399px 399px 399px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productCatalogItem {
+    width: 360px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.03), 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.productCatalogImg {
+    background-color: #daecf7;
+    border-radius: 23.8246px;
+    width: 144px;
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.productCatalogItem:hover .productCatalogImg {
+    background-color: #D36601;
+}
+
+.productCatalogText {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    margin-top: 25px;
+}
+
+.productCatalogItem .imgcatalog path {
+    fill: #015991;
+    transition: .3s;
+}
+
+.productCatalogItem:hover .imgcatalog path {
+    fill: #fff;
+    transition: .3s;
+}
+
+.mainForm {
+    background-color: #005287;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainFormtitle {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.mainFormItemflex {
+    display: flex;
+    column-gap: 20px;
+}
+
+.mainForBtn {
+    font-family: 'PF BeauSans Pro';
+    background: #D36601;
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.019em;
+    padding: 5px 50px;
+    color: #FFFFFF;
+}
+
+.mainFormItem input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 303px;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+}
+
+.mainFormItem input::placeholder,
+.mainFormItem textarea::placeholder {
+    color: #fff;
+}
+
+.mainFormItem textarea {
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 33px;
+}
+
+.mainselect {
+    width: 303px;
+    padding: 0 0px;
+    background: transparent;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    height: 31px;
+    margin-bottom: 35px;
+}
+
+.specialOffers {
+    padding: 100px 0;
+}
+
+.specialOffers__Title {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialOffers__Flex {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.specialOffers__Item {
+    padding: 35px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+}
+
+.specialOffersImg {}
+
+.specialOffers__Text {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #1A1A1A;
+}
+
+.specialOffers__Item a {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #535456;
+}
+
+.swiperMainBtn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #D36601;
+    mix-blend-mode: normal;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.color_green {
+    background-color: #A2C62D;
+}
+
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 50px 0;
+    border-bottom: 1px solid #000;
+}
+
+.partners__title {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    margin-bottom: 50px;
+}
+
+.partners__Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.partnersImg {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.partnersImg:hover {
+    background: rgba(143, 143, 143, 0.2);
+}
+
+.partnersFull {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    height: 530px;
+}
+
+.partnersFull__Item {
+    display: flex;
+    flex-direction: column;
+    max-width: 666px;
+    row-gap: 20px;
+}
+
+.partnersFull__Title {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.partnersFull__Desc {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+
+    color: #343434;
+}
+
+.partnersFull__Img {
+    width: 320px;
+}
+
+.partnersFull__Img img {
+    transform: scale(150%);
+}
+
+.orange {
+    color: #D36601;
 }

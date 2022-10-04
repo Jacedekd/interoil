@@ -1,23 +1,28 @@
-$(".img_svg").each(function () {
-  var $img = $(this);
-  var imgClass = $img.attr("class");
-  var imgURL = $img.attr("src");
-  $.get(
-    imgURL,
-    function (data) {
-      var $svg = $(data).find("svg");
-      if (typeof imgClass !== "undefined") {
-        $svg = $svg.attr("class", imgClass + " replaced-svg");
-      }
-      $svg = $svg.removeAttr("xmlns:a");
-      if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-        $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
-      }
-      $img.replaceWith($svg);
-    },
-    "xml"
-  );
-});
+function imgSvg(names) {
+  $(names).each(function () {
+    var $img = $(this);
+    var imgClass = $img.attr("class");
+    var imgURL = $img.attr("src");
+    $.get(
+      imgURL,
+      function (data) {
+        var $svg = $(data).find("svg");
+        if (typeof imgClass !== "undefined") {
+          $svg = $svg.attr("class", imgClass + " replaced-svg");
+        }
+        $svg = $svg.removeAttr("xmlns:a");
+        if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+          $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
+        }
+        $img.replaceWith($svg);
+      },
+      "xml"
+    );
+  });
+}
+
+imgSvg('.img_svg');
+imgSvg('.imgcatalog');
 
 
 let language_Togler = document.querySelector(".language_Togler");
@@ -77,6 +82,63 @@ popap.addEventListener("click", () => {
   popap__notactive();
 });
 
+let partnerArr = [
+  {
+    partnerTitle: 'Новопэк - Производство промышленной полимерной упаковки',
+    partnerDesc: ' Новопэк является многолетним лидером на рынке полимерной упаковки, компания — готовая гарантировать качественный продукт соответствующий нормам Таможенного союза. Основанная в 2003 году, она уверенно прошла путь от небольшой фабрики регионального уровня, до одного из крупнейших промышленных комплексов на территории стран-участниц ЕАЭС. Завод оснащен современным оборудованием из Австрии, Италии, Турции и Тайваня, а в производстве используется лишь первичное полимерное сырье и высококачественные зарубежные добавки',
+  },
+  {
+    partnerTitle: 'УКТМК',
+    partnerDesc: 'Усть-Каменогорский титано-магниевый комбинат — казахстанский комбинат, полностью интегрированный производитель титана. Основным видом деятельности компании является производство высококачественной титановой губки, титановых слитков и магния марки Mg-90 для использования в авиационной промышленности и других отраслях.',
+  },
+  {
+    partnerTitle: 'Агромаш Холдинг',
+    partnerDesc: 'АО «АгромашХолдинг KZ» — системообразующее казахстанское предприятие, производитель сельхозтехники. •АО «АгромашХолдинг KZ» отечественное промышленное предприятие, производящее зерноуборочные и кормоуборочные комбайны, тракторы, сеялки, бороны и прочие комплектующие для сельскохозяйственной техники.',
+  },
+  {
+    partnerTitle: 'Богатырь Комир',
+    partnerDesc: 'У́гольный разре́з Богатырь — угледобывающее предприятие, расположенное в городе Экибастузе, Казахстан. Входит в состав ТОО «Богатырь Көмір».',
+  },
+  {
+    partnerTitle: 'ArcelorMittal',
+    partnerDesc: 'ArcelorMittal, «Арсело́р Ми́ттал» — крупнейшая металлургическая компания в мире, на конец 2008 года контролировавшая 10 % мирового рынка стали. Зарегистрирована в Люксембурге. Имеет производственные мощности в 18 странах на 4 континентах, продукция реализуется в 160 государствах.',
+  },
+  {
+    partnerTitle: 'Казахстанские железные дороги',
+    partnerDesc: '«Казахстан темир жолы» — крупнейший оператор магистральной железнодорожной сети Казахстана. Полное наименование — Акционерное общество «Национальная компания „Қазақстан темір жолы“». Главный офис КТЖ — в столице Казахстана Нур-Султан. В структуру холдинга «Казахстан темир жолы» входят компании: «Ремлокомотив»;',
+  },
+  {
+    partnerTitle: 'Samruk-Energy',
+    partnerDesc: 'АО «Самрук-Энерго». Крупнейший государственный многопрофильный энергетический холдинг Казахстана, успешно интегрированный в международный энергобаланс',
+  },
+  {
+    partnerTitle: 'МТЗ - КАЗАХСТАН',
+    partnerDesc: 'Завод по производству тракторов «БЕЛАРУС» в Республике Казахстан - ТОО Машиностроительный завод МТЗ-Казахстан» был создан 1 сентября 2018 года.',
+  },
+  {
+    partnerTitle: 'САУТС-ОЙЛ',
+    partnerDesc: 'Компания «САУТС-ОЙЛ» заслуженно считается одним из наиболее успешных и динамично развивающихся предприятий на нефтегазовом рынке Казахстана. Основная сфера нашей деятельности – добыча углеводородного сырья в перспективном Кызылординском регионе.',
+  },
+]
+
+let partnersImg = document.querySelectorAll('.partnersImg');
+
+let partnersFull__Img = document.querySelector('.partnersFull__Img img'),
+  partnersFull__Title = document.querySelector('.partnersFull__Title'),
+  partnersFull__Desc = document.querySelector('.partnersFull__Desc');
+
+partnersImg.forEach((item) => {
+  item.addEventListener('click', () => {
+    partnersFull__Img.src = item.firstChild.attributes[1].value;
+    for (let i = 0; i < 9; i++) {
+      if (item.firstChild.id === `parner${i}`) {
+        partnersFull__Title.innerHTML = partnerArr[i].partnerTitle;
+        partnersFull__Desc.innerHTML = partnerArr[i].partnerDesc;
+      }
+    }
+  })
+})
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
 
@@ -98,6 +160,29 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// const swiper2 = new Swiper(".swiper2", {
+//   // Optional parameters
+
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
+
+// });
 
 let sort_Crug = document.querySelector(".sort_Crug");
 let sortiv = document.querySelector(".sortiv");
@@ -172,6 +257,7 @@ for (increment3 = 0; increment3 < acc3.length; increment3++) {
     }
   });
 }
+
 let classificationAPI = document.querySelector(".classificationAPI");
 let classification__Title = document.querySelector(".classification__Title");
 

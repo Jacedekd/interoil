@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEROIL2</title>
+    <link type="image/x-icon" href="./assets/img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="popap">
+        </div>
+        <div class="popap__body">
+            <div class="popap__close"><img src="./assets/img/close.svg" alt=""></div>
+            <div class="popa__Title">Авторизация</div>
+            <label class="emaillabel" for="email">Email или номер телефона</label>
+            <input class="popap__input" type="text" id="email">
+            <div class="popap__passwordBlock">
+                <label for="password">Пароль</label>
+                <div class="popap__hide">
+                    <img src="./assets/img/passwordicon.svg" alt="">
+                    <span>Скрыть</span>
+                </div>
+            </div>
+            <input class="popap__input" type="password" id="password">
+            <button class="popap__btn">Войти</button>
+            <div class="popap__group">
+                <div class="popap__flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Запомнить данные</span>
+                </div>
+                <div class="popap__help">Нужна помощь?</div>
+            </div>
+            <div class="popap__registration">Нет учётной записи? <a href="./registration.html">Регистрация</a></div>
+        </div>
+        <nav class="toolbar">
+            <div class="toolbar__Top">
+                <div class="toolbar__container">
+                    <div class="toolbarGroup">
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/phone.svg" alt="">
+                            <span>+77071234567</span>
+                        </div>
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/mail.svg" alt="">
+                            <span>info@interoil.com</span>
+                        </div>
+                        <img src="./assets/img/fasebook.svg" alt="">
+                        <img src="./assets/img/instagram.svg" alt="">
+                    </div>
+                    <div class="toolbarGroup2">
+                        <div class="language">
+                            <div class="language_En">KZ</div>
+                            <div class="language_Ru">RU</div>
+                            <div class="language_Togler"></div>
+                        </div>
+                        <div class="toolbarblock">
+                            <img src="./assets/img/geo.svg" alt="">
+                            <span>Алматы</span>
+                            <span class="span"></span>
+                        </div>
+                        <div class="toolbarblock signin">
+                            <img src="./assets/img/signIn.svg" alt="">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar__Bottom">
+                <div class="toolbar__container">
+                    <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
+                    <div class="toolbar__block">
+                        <ul>
+                            <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                            <li><a href="./catalog.html">КАТАЛОГ</a></li>
+                            <li><a href="./partners.html">ПАРТНЕРЫ</a></li>
+                            <li><a href="./aboutUs.html">О НАС</a></li>
+                            <li><a href="./jobvacancy.html">ВАКАНСИИ</a></li>
+                            <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                    <div class="toolbar__iconBlock">
+                        <img class="img_svg" src="./assets/img/toolbar__search.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__like.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__bag.svg" alt="">
+                    </div>
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+
+        </nav>
+        <div class="backgroundImg d-flex align-items-center">
+            <div class="toolbar__container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Каталог </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__group">
+                    <div class="filter">
+                        <div class="filter__Title"><span><img src="./assets/img/filterIcon.svg" alt=""></span> Фильтр
+                        </div>
+                        <div class="filter__brandGp">
+                            <div class="filter__brand">
+                                <div class="filter__brandText">Выберите бренд</div>
+                                <img src="./assets/img/arrow.svg" alt="">
+                            </div>
+                            <div class="classification___Box">
+                                <div class="classification___Boxtext"><input id="mineral" type="checkbox"><label
+                                        for="mineral">Минеральное</label>
+                                </div>
+                                <div class="classification___Boxtext"><input id="polusintek" type="checkbox"><label
+                                        for="polusintek">Полусинтетическое</label>
+                                </div>
+                                <div class="classification___Boxtext"><input id="sintek" type="checkbox"><label
+                                        for="sintek">Синтетическое</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__Box">
+                            <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
+                                        alt=""></span>
+                                Легковой автомобиль</div>
+                            <div class="panel">
+                                <div class="panel__text">Трансмиссионные масла</div>
+                                <div class="panel__text">Охлаждающие жидкости</div>
+                                <div class="panel__text">Тормозные жидкости</div>
+                                <div class="panel__text">Масло промывочное, <br> антикоррозионное</div>
+                            </div>
+                            <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
+                                        alt=""></span>
+                                Моторные масла</div>
+                            <div class="panel">
+                                <div class="panel__text">Трансмиссионные масла</div>
+                                <div class="panel__text">Охлаждающие жидкости</div>
+                                <div class="panel__text">Тормозные жидкости</div>
+                                <div class="panel__text">Масло промывочное, <br> антикоррозионное</div>
+                            </div>
+                            <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
+                                        alt=""></span>
+                                Коммерческие масла</div>
+                            <div class="panel">
+                                <div class="panel__text">Трансмиссионные масла</div>
+                                <div class="panel__text">Охлаждающие жидкости</div>
+                                <div class="panel__text">Тормозные жидкости</div>
+                                <div class="panel__text">Масло промывочное, <br> антикоррозионное</div>
+                            </div>
+                            <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
+                                        alt=""></span>
+                                Индустриальные масла</div>
+                            <div class="panel">
+                                <div class="panel__text">Трансмиссионные масла</div>
+                                <div class="panel__text">Охлаждающие жидкости</div>
+                                <div class="panel__text">Тормозные жидкости</div>
+                                <div class="panel__text">Масло промывочное, <br> антикоррозионное</div>
+                            </div>
+                            <div class="filter__Item"><span><img class="arrow" src="./assets/img/arrow.svg"
+                                        alt=""></span>
+                                Мотоциклы, садовая техника</div>
+                            <div class="panel">
+                                <div class="panel__text">Трансмиссионные масла</div>
+                                <div class="panel__text">Охлаждающие жидкости</div>
+                                <div class="panel__text">Тормозные жидкости</div>
+                                <div class="panel__text">Масло промывочное, <br> антикоррозионное</div>
+                            </div>
+                        </div>
+                        <div class="classification">
+                            <div class="classificationAPI">
+                                <div class="classification__Title">
+                                    <div class="classification__text">Классификация по API</div>
+                                    <img src="./assets/img/arrow.svg" alt="">
+                                </div>
+                                <div class="classification___Box">
+                                    <div class="classification___Boxtext"><input id="mineralA" type="checkbox"><label
+                                            for="mineralA">Минеральное</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input id="polusintekA" type="checkbox"><label
+                                            for="polusintekA">Полусинтетическое</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input id="sintekA" type="checkbox"><label
+                                            for="sintekA">Синтетическое</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="classification__Item changeC">
+                                <div class="classification_Itemtext">Вид масла</div>
+                                <img src="./assets/img/arrow.svg" alt="">
+                            </div>
+                            <div class="classification___Box">
+                                <div class="classification___Boxtext"><input id="mineralV" type="checkbox"><label
+                                        for="mineralV">Минеральное</label>
+                                </div>
+                                <div class="classification___Boxtext"><input id="polusintekV" type="checkbox"><label
+                                        for="polusintekV">Полусинтетическое</label>
+                                </div>
+                                <div class="classification___Boxtext"><input id="sintekV" type="checkbox"><label
+                                        for="sintekV">Синтетическое</label>
+                                </div>
+                            </div>
+                            <div class="CFI2">
+                                <div class="classification_Itemtext">Вязкость по SAE</div>
+                                <img src="./assets/img/arrow.svg" alt="">
+                            </div>
+                            <div class="classification___Box2">
+                                <div class="classification___Boxtext"><input id="SAE1" type="checkbox"><label
+                                        for="SAE1">OW-20</label></div>
+                                <div class="classification___Boxtext"><input id="SAE2" type="checkbox"><label
+                                        for="SAE2">OW-30</label></div>
+                                <div class="classification___Boxtext"><input id="SAE3" type="checkbox"><label
+                                        for="SAE3">OW-40</label></div>
+                                <div class="classification___Boxtext"><input id="SAE4" type="checkbox"><label
+                                        for="SAE4">1OW-40</label></div>
+                                <div class="classification___Boxtext"><input id="SAE5" type="checkbox"><label
+                                        for="SAE5">15W-40</label></div>
+                                <div class="classification___Boxtext"><input id="SAE6" type="checkbox"><label
+                                        for="SAE6">2OW-40</label></div>
+                                <div class="classification___Boxtext"><input id="SAE7" type="checkbox"><label
+                                        for="SAE7">5W-30</label></div>
+                                <div class="classification___Boxtext"><input id="SAE8" type="checkbox"><label
+                                        for="SAE8">5W-40</label></div>
+                                <div class="classification___Boxtext"><input id="SAE9" type="checkbox"><label
+                                        for="SAE9">5W-50</label></div>
+                            </div>
+                            <div class="CFI3">
+                                <div class="CFI3mode">
+                                    <div class="classification_Itemtext">Теги</div>
+                                    <img src="./assets/img/arrow.svg" alt="">
+                                </div>
+                                <div class="classification___Box3">
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag1"
+                                            value="Gazprom"><label for="tag1">Gazprom</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag2"
+                                            value="10w40"><label for="tag2">10w40</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag3"
+                                            value="10w30"><label for="tag3">10w30</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag4"
+                                            value="g-energy"><label for="tag4">g-energy</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag5"
+                                            value="Evooil"><label for="tag5">Evooil</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag6"
+                                            value="Platinum"><label for="tag6">Platinum</label>
+                                    </div>
+                                    <div class="classification___Boxtext"><input type="checkbox" class="tag" id="tag7"
+                                            value="O10W-40"><label for="tag7">O10W-40</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content__main">
+                        <div class="content__flex">
+                            <div class="content__flexItem">
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <label class="groupLabel">Сортировка</label>
+                                    <div class="group__arrow arr1"></div>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <div class="group__arrow arr2"></div>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <label class="groupLabel">Тип</label>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <label class="groupLabel">Тип</label>
+                                    <div class="group__arrow arr3"></div>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <input class="groupInput" type="text" required>
+                                    <label class="groupLabel">Наличие</label>
+                                    <div class="group__arrow"></div>
+                                    <ul class="dropdown-menu">
+                                        <li id="male">Male</li>
+                                        <li id="Bace">Bace</li>
+                                        <li id="female">Female</li>
+                                        <li id="ligde">ligde</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="content__flexItem">
+                                <div class="flexItem__sortirovka">
+                                    <div class="sortiv">Показать все</div>
+                                    <div class="sortiv_num">36</div>
+                                    <div class="sortiv_num2">24</div>
+                                    <div class="sort_Crug">Показать всё</div>
+                                </div>
+                                <div class="flexItem__view">
+                                    <div class="view-list"><img src="./assets/img/view-list.svg" alt=""></div>
+                                    <div class="view-grid"><img src="./assets/img/view-grid.svg" alt=""></div>
+                                    <div class="viewChange"><img class="viewChangeImg"
+                                            src="./assets/img/view-gridOrange.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__alfa">
+                            <div class="content__block">
+                                <span>Теги:</span>
+                                <div id="taglist">
+                                    <div id="hidden"></div>
+                                    <div id="checked"></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="search__Block"><input placeholder="Поиск" type="text"></div>
+                        </div>
+
+                        <div class="row content__Grid">
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/energy.png" alt="">
+                                    <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/oil.png" alt="">
+                                    <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/gazprom.png" alt="">
+                                    <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/energy.png" alt="">
+                                    <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/oil.png" alt="">
+                                    <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/gazprom.png" alt="">
+                                    <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/energy.png" alt="">
+                                    <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/oil.png" alt="">
+                                    <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/gazprom.png" alt="">
+                                    <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/energy.png" alt="">
+                                    <div class="content__CardsTitle">G-ENERGY EXPERT G 5W-30</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/oil.png" alt="">
+                                    <div class="content__CardsTitle">Evooil Platinum SAE 10W-40</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn"><a href="./cards.html">Подробнее</a></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="content__Cards">
+                                    <img src="./assets/img/gazprom.png" alt="">
+                                    <div class="content__CardsTitle">GAZPROMNEFT И-20А</div>
+                                    <div class="content__CardsArtikul">Артикул: 6554</div>
+                                    <button class="content__CardsBtn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper__Cards">
+                        <div class="swiper__CardsGroup">
+                            <div class="swiper__CardsTitle">Evooil</div>
+                            <div class="swiper__CardsDesc">ТОО "Evooil Kazakhstan" является производственной компанией.
+                                На
+                                производственных мощностях ТОО "Evooil Kazakhstan" выпускаются высокотехнологичные масла
+                                последних поколений на высококачественном сырье I, II и III групп базовых масел.
+                                Ассортимент
+                                выпускаемой продукции включает в себя масла моторной, гидравлической, трансмиссионной,
+                                индустриальной и энергетической групп.
+                            </div>
+                        </div>
+
+                        <div class="swiper__Img">
+                            <img src="./assets/img/swiper_Oil.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__Cards bc2">
+                        <div class="swiper__CardsGroup">
+                            <div class="swiper__CardsTitle">G-Energy</div>
+                            <div class="swiper__CardsDesc">Масла для двухтактных двигателей мобильной и садовой техники
+                                (синтетические, п/синтетические): для мотоциклов, мотороллеров, мопедов, скутеров,
+                                снегоходов, бензопил, мотоблоков.
+                            </div>
+                        </div>
+
+                        <div class="swiper__Img">
+                            <img src="./assets/img/swiper__energy.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__Cards bc3">
+                        <div class="swiper__CardsGroup">
+                            <div class="swiper__CardsTitle">GAZPROMNEFT</div>
+                            <div class="swiper__CardsDesc">Расширение ассортимента целым рядом синтетических и
+                                полусинтетических продуктов линеек Gazpromneft Premium и Gazpromneft ATF. Моторные и
+                                трансмиссионные масла подтвердили соответствия самым современным спецификациям API и
+                                ACEA и возможность использования в самых современных моделях иномарок и отечественных
+                                автомобилей
+                            </div>
+                        </div>
+
+                        <div class="swiper__Img">
+                            <img src="./assets/img/swiper__gazprom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Продукция</div>
+                            <div class="footerText">Моторные масла</div>
+                            <div class="footerText">Коммерческие масла</div>
+                            <div class="footerText">Трансмиссионные масла</div>
+                            <div class="footerText">Пластичные смазки</div>
+                            <div class="footerText">Охлаждающие жидкости</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Компания </div>
+                            <div class="footerText">О нас</div>
+                            <div class="footerText">Новости</div>
+                            <div class="footerText">Мероприятия</div>
+                            <div class="footerText">Наши клиенты</div>
+                            <div class="footerText">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Поддержка</div>
+                            <div class="footerText">Связаться с нами</div>
+                            <div class="footerText">Помощь</div>
+                            <div class="footerText">Публичная оферта</div>
+                            <div class="footerText">Карта сайта</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Информация</div>
+                            <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
+                            <div class="footerText">E-mail: office@interoil.kz</div>
+                            <div class="footerText">Телефон: +7 (727) 321 04 67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__Bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <div class="footer__Bottomtext">© interoil 2022</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__BottomGroup">
+                            <div class="footerIcon">
+                                <img src="./assets/img/footer_fasebook.svg" alt="">
+                                <img src="./assets/img/footer_twiter.svg" alt="">
+                                <img src="./assets/img/footer_instagram.svg" alt="">
+                            </div>
+                            <div class="footerLanguage">Русский<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
