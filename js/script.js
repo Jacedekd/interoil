@@ -376,7 +376,7 @@ for (let e of checkboxes) {
   let div = document.createElement("div");
   let span = document.createElement("span");
 
-  div.innerText = e.value;
+  div.innerText = e.labels[0].innerHTML;
   div.classList.add("ltag");
   span.classList.add("lspan");
   span.innerText = '';
