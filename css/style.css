@@ -1333,7 +1333,9 @@ img {
 
 
 .headerGroup__Img img {
-    width: 550px;
+    max-width: 350px;
+    max-height: 550px;
+    width: 100%;
 }
 
 .group__arrow {
@@ -2862,6 +2864,7 @@ textarea:focus {
     letter-spacing: 0.01em;
     color: #666666;
     margin-bottom: 50px;
+    max-width: 550px;
 }
 
 .twoMain {
@@ -2870,7 +2873,7 @@ textarea:focus {
     background: #FFFFFF;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.05), 0px 5px 4px rgba(0, 0, 0, 0.05), 0px 4px 20px rgba(148, 148, 148, 0.1);
     border-radius: 10px;
-    width: 1000px;
+    width: 1050px;
     margin: 100px auto;
 
 }
@@ -2882,6 +2885,7 @@ textarea:focus {
     column-gap: 10px;
     cursor: pointer;
     color: #535456;
+    font-size: 110%;
 
 }
 
