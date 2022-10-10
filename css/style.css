@@ -2828,7 +2828,16 @@ textarea:focus {
     display: flex;
     column-gap: 45px;
 }
-
+.swiperMainTitle0 {
+    font-family: 'PF BeauSans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
 .swiperMainTitle {
     font-family: 'PF BeauSans Pro';
     margin-bottom: 20px;
