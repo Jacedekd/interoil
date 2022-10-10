@@ -2835,8 +2835,9 @@ textarea:focus {
     font-size: 28px;
     line-height: 34px;
     text-transform: uppercase;
-    
+    margin-bottom: 20px;
     color: #000000;
+    max-width: 637px;
 }
 .swiperMainTitle {
     font-family: 'PF BeauSans Pro';

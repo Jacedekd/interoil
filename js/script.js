@@ -350,16 +350,19 @@ let listArray = [];
 
 for (let checkbox of checkboxes) {
   checkbox.addEventListener("click", function () {
+    // console.log(checkbox.data_names);
     if (this.checked) {
+      console.log(this.labels[0].innerHTML);
       let div = document.createElement("div");
-      div.innerHTML = this.value;
+      div.innerHTML = this.labels[0].innerHTML;
       div.classList.add("content__blockText");
       listArray.push(div);
       for (i = 0; i < listArray.length; i++) {
         content__block.append(listArray[i]);
+        console.log(listArray);
       }
     } else {
-      let elem = listArray.find((item) => item.innerText === this.value);
+      let elem = listArray.find((item) => item.innerText === this.labels[0].innerHTML);
       let index = listArray.indexOf(elem);
       content__block.removeChild(listArray[index]);
       listArray.splice(index, 1);
