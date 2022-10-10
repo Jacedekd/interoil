@@ -1912,6 +1912,8 @@ img {
     transform: translateY(-3px);
 }
 
+
+
 .lspan::before {
     position: absolute;
     top: 0;
@@ -3277,4 +3279,8 @@ textarea:focus {
 
 .orange {
     color: #D36601;
+}
+
+.nb {
+    border-bottom: 1px solid #fff;
 }

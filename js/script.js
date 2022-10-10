@@ -374,11 +374,12 @@ for (let e of checkboxes) {
   e.onchange = changeTag;
 
   let div = document.createElement("div");
-  let span = document.createElement("span");
+  let span = document.createElement("img");
 
   div.innerText = e.labels[0].innerHTML;
   div.classList.add("ltag");
   span.classList.add("lspan");
+  span.attr('src', 'dsfdsf')
   span.innerText = '';
   span.onclick = function () {
     hidden.append(this.parentNode);
