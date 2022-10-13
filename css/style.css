@@ -3192,7 +3192,16 @@ textarea:focus {
 .specialOffers {
     padding: 100px 0;
 }
-
+.specialOffersImg {
+    max-width: 320px;
+    height: 204px;
+}
+.specialOffersImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
 .specialOffers__Title {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
