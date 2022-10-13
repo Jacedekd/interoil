@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEROIL2</title>
+    <link type="image/x-icon" href="./assets/img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./assets/fonts/PFBeauSansPro/stylesheet.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="popap">
+        </div>
+        <div class="popap__body">
+            <div class="popap__close"><img src="./assets/img/close.svg" alt=""></div>
+            <div class="popa__Title">Авторизация</div>
+            <label class="emaillabel" for="email">Email или номер телефона</label>
+            <input class="popap__input" type="text" id="email">
+            <div class="popap__passwordBlock">
+                <label for="password">Пароль</label>
+                <div class="popap__hide">
+                    <img src="./assets/img/passwordicon.svg" alt="">
+                    <span>Скрыть</span>
+                </div>
+            </div>
+            <input class="popap__input" type="password" id="password">
+            <button class="popap__btn">Войти</button>
+            <div class="popap__group">
+                <div class="popap__flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Запомнить данные</span>
+                </div>
+                <div class="popap__help">Нужна помощь?</div>
+            </div>
+            <div class="popap__registration">Нет учётной записи? <a href="./registration.html">Регистрация</a></div>
+        </div>
+        <nav class="toolbar">
+            <div class="toolbar__Top">
+                <div class="toolbar__container">
+                    <div class="toolbarGroup">
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/phone.svg" alt="">
+                            <span>+77071234567</span>
+                        </div>
+                        <div class="toolbarnumBlock">
+                            <img src="./assets/img/mail.svg" alt="">
+                            <span>info@interoil.com</span>
+                        </div>
+                        <img src="./assets/img/fasebook.svg" alt="">
+                        <img src="./assets/img/instagram.svg" alt="">
+                    </div>
+                    <div class="toolbarGroup2">
+                        <div class="language">
+                            <div class="language_En">KZ</div>
+                            <div class="language_Ru">RU</div>
+                            <div class="language_Togler"></div>
+                        </div>
+                        <div class="toolbarblock">
+                            <img src="./assets/img/geo.svg" alt="">
+                            <span>Алматы</span>
+                            <span class="span"></span>
+                        </div>
+                        <div class="toolbarblock signin">
+                            <img src="./assets/img/signIn.svg" alt="">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar__Bottom toolbar__BottomArea">
+                <div class="toolbar__container containerArea">
+                    <a href="./">
+                <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
+            </a>
+                    <div class="toolbar__inputBlock">
+                        <input class="toolbar__search" placeholder="Поиск по сайту">
+                        <img src="./assets/img/toolbar__searchLogo.svg" alt="">
+                    </div>
+                    <div class="toolbar__BottomLast">
+                        <div class="toolbar__bottomLogoBlock">
+                            <img src="./assets/img/toolbarIcon1.svg" alt="">
+                            <img src="./assets/img/toolbarIcon2.svg" alt="">
+                            <img src="./assets/img/toolbarIcon3.svg" alt="">
+                        </div>
+                        <div class="toolbar__BottomUserName">Арсен Манукян</div>
+                        <img class="toolbar__BottomArrow" src="./assets/img/toolbarBottomArrow.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+
+        </nav>
+        <div class="personalArea">
+            <aside class="sidebar">
+                <div class="sidebar__Group1">
+                    <a href="./personalProfile.html">
+                        <div class="sidebar__Item">
+                            <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon1.svg"
+                                    alt=""></div>
+                            <div class="sidebar__text">Профиль</div>
+                        </div>
+                    </a>
+                    <a href="./personalHistory.html">
+                        <div class="sidebar__Item">
+                            <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon2.svg"
+                                    alt=""></div>
+                            <div class="sidebar__text">История заказов</div>
+                        </div>
+                    </a>
+                    <a href="./personalTrash.html">
+                        <div class="sidebar__Item">
+                            <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon3.svg"
+                                    alt=""></div>
+                            <div class="sidebar__text">Корзина</div>
+                        </div>
+                    </a>
+                    <a href="./personalDebt.html">
+                        <div class="sidebar__Item">
+                            <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon4.svg"
+                                    alt=""></div>
+                            <div class="sidebar__text">Задолженности</div>
+                        </div>
+                    </a>
+                    <div class="sidebar__Item">
+                        <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon7.svg"
+                                alt=""></div>
+                        <div class="sidebar__text">Поддержка</div>
+                    </div>
+                </div>
+                <div class="sidebar__Group2">
+                    <div class="sidebar__Item">
+                        <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon6.svg"
+                                alt=""></div>
+                        <div class="sidebar__text">Уведомления</div>
+                    </div>
+                    <div class="sidebar__Item">
+                        <div class="sidebar___icon"><img class="sidebarImg" src="./assets/img/sidebar__icon8.svg"
+                                alt=""></div>
+                        <div class="sidebar__text">Настройки</div>
+                    </div>
+                </div>
+            </aside>
+            <div class="personalArea__Info">
+                <div class="personalArea__Body plr">
+                    <div class="history__Title">
+                        <div class="history__MainName">Название</div>
+                        <div class="history__Group">
+                            <div class="history__MainData">Начальный остаток</div>
+                            <div class="history__MainData">Оборот</div>
+                            <div class="history__MainPrice">Конечный остаток</div>
+                            <div class="history__MainStatus">Статус</div>
+                        </div>
+                    </div>
+                    <div class="history__Main">
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status pending">В ожидании</div>
+                            </div>
+                        </div>
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status repaid">Погашен</div>
+                            </div>
+                        </div>
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status pending">В ожидании</div>
+                            </div>
+                        </div>
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status notPaid">Не оплачен</div>
+                            </div>
+                        </div>
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status repaid">Погашен</div>
+                            </div>
+                        </div>
+                        <div class="history__Item">
+                            <div class="history__block">
+                                <div class="history__img"></div>
+                                <div class="history__name">Заголовок #1</div>
+                            </div>
+                            <div class="history__lastBlock lastBlock2">
+                                <div class="history__initialBalance">658 110 т</div>
+                                <div class="history__turnover">252 982 т</div>                
+                                <div class="history__remainder">507 488 т</div>
+                                <div class="history__status notPaid">Не оплачен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="history__all">Посмотреть все задолжнности
+                        <span>
+                            <img src="./assets/img/history__allIcon.svg" alt="">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 "><img src="./assets/img/footerLogo.svg" alt=""></div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Продукция</div>
+                            <div class="footerText">Моторные масла</div>
+                            <div class="footerText">Коммерческие масла</div>
+                            <div class="footerText">Трансмиссионные масла</div>
+                            <div class="footerText">Пластичные смазки</div>
+                            <div class="footerText">Охлаждающие жидкости</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Компания </div>
+                            <div class="footerText">О нас</div>
+                            <div class="footerText">Новости</div>
+                            <div class="footerText">Мероприятия</div>
+                            <div class="footerText">Наши клиенты</div>
+                            <div class="footerText">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Поддержка</div>
+                            <div class="footerText">Связаться с нами</div>
+                            <div class="footerText">Помощь</div>
+                            <div class="footerText">Публичная оферта</div>
+                            <div class="footerText">Карта сайта</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="footerItem">
+                            <div class="footerText ftrmode">Информация</div>
+                            <div class="footerText lh">Город: г. Алматы, проспект <br> Н,Назарбаева, 223, блок 2б</div>
+                            <div class="footerText">E-mail: office@interoil.kz</div>
+                            <div class="footerText">Телефон: +7 (727) 321 04 67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__Bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <div class="footer__Bottomtext">© interoil 2022</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__BottomGroup">
+                            <div class="footerIcon">
+                                <img src="./assets/img/footer_fasebook.svg" alt="">
+                                <img src="./assets/img/footer_twiter.svg" alt="">
+                                <img src="./assets/img/footer_instagram.svg" alt="">
+                            </div>
+                            <div class="footerLanguage">Русский<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

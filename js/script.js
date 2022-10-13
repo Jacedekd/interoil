@@ -23,6 +23,7 @@ function imgSvg(names) {
 
 imgSvg('.img_svg');
 imgSvg('.imgcatalog');
+imgSvg('.sidebarImg');
 
 
 let language_Togler = document.querySelector(".language_Togler");
@@ -30,6 +31,15 @@ let language = document.querySelector(".language");
 
 language.addEventListener("click", () => {
   language_Togler.classList.toggle("change");
+});
+
+
+let history__all = document.querySelector('.history__all');
+let trash__Main = document.querySelector('.trash__Main');
+
+history__all.addEventListener('click', () => {
+  trash__Main.classList.add('trash__MainAdd');
+
 });
 
 let hamburger = document.querySelector(".hamburger");
@@ -379,7 +389,8 @@ for (let e of checkboxes) {
   div.innerText = e.labels[0].innerHTML;
   div.classList.add("ltag");
   span.classList.add("lspan");
-  span.attr('src', 'dsfdsf')
+  span.setAttribute('src', './assets/img/freeiconcancel.svg');
+  
   span.innerText = '';
   span.onclick = function () {
     hidden.append(this.parentNode);
@@ -394,4 +405,3 @@ for (let e of checkboxes) {
 function changeTag() {
   this.checked ? checked.append(this.target) : hidden.append(this.target);
 }
-
