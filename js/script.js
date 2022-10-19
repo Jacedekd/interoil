@@ -33,14 +33,27 @@ language.addEventListener("click", () => {
   language_Togler.classList.toggle("change");
 });
 
+const logout = document.querySelector('.logout');
+const logout__Body = document.querySelector('.logout__Body');
+const BottomArrow = document.querySelector('.toolbar__BottomArrow');
+
+if (logout != null) {
+  logout.addEventListener('click', () => {
+    logout__Body.classList.toggle('logout__is-active');
+    BottomArrow.classList.toggle('BottomArrow__active')
+  })
+}
 
 let history__all = document.querySelector('.history__all');
 let trash__Main = document.querySelector('.trash__Main');
 
-history__all.addEventListener('click', () => {
-  trash__Main.classList.add('trash__MainAdd');
+if (history__all != null) {
+  history__all.addEventListener('click', () => {
+    trash__Main.classList.add('trash__MainAdd');
 
-});
+  });
+}
+
 
 let hamburger = document.querySelector(".hamburger");
 let ul = document.querySelector(".toolbar__block");
@@ -80,18 +93,22 @@ const popap__notactive = () => {
   popap__body.classList.remove("popap__activeb");
 };
 
-signin.addEventListener("click", () => {
-  popap__active();
-});
+if (signin != null) {
+  signin.addEventListener("click", () => {
+    popap__active();
+  });
+}
 
-
-popap__close.addEventListener("click", () => {
-  popap__notactive();
-});
-popap.addEventListener("click", () => {
-  popap__notactive();
-});
-
+if (popap__close != null) {
+  popap__close.addEventListener("click", () => {
+    popap__notactive();
+  });
+}
+if (popap != null) {
+  popap.addEventListener("click", () => {
+    popap__notactive();
+  });
+}
 let partnerArr = [
   {
     partnerTitle: 'Новопэк - Производство промышленной полимерной упаковки',
@@ -171,6 +188,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+
 // const swiper2 = new Swiper(".swiper2", {
 //   // Optional parameters
 
@@ -200,23 +218,31 @@ let sortiv = document.querySelector(".sortiv");
 let sortiv_num = document.querySelector(".sortiv_num");
 let sortiv_num2 = document.querySelector(".sortiv_num2");
 
-sortiv_num.addEventListener("click", () => {
-  sort_Crug.innerHTML = "36";
-  sort_Crug.style.margin = "132px";
-});
 
-sortiv_num2.addEventListener("click", () => {
-  sort_Crug.style.margin = "191px";
-  sort_Crug.innerHTML = "24";
-});
-sortiv.addEventListener("click", () => {
-  setTimeout(() => {
-    sort_Crug.innerHTML = "Показать всё";
-  }, 200)
+if (sortiv_num != null) {
+  sortiv_num.addEventListener("click", () => {
+    sort_Crug.innerHTML = "36";
+    sort_Crug.style.margin = "132px";
+  });
+}
 
-  sort_Crug.style.margin = "0px";
+if (sortiv_num2 != null) {
+  sortiv_num2.addEventListener("click", () => {
+    sort_Crug.style.margin = "191px";
+    sort_Crug.innerHTML = "24";
+  });
+}
 
-});
+if (sortiv != null) {
+  sortiv.addEventListener("click", () => {
+    setTimeout(() => {
+      sort_Crug.innerHTML = "Показать всё";
+    }, 200)
+
+    sort_Crug.style.margin = "0px";
+
+  });
+}
 
 let acc = document.getElementsByClassName("filter__Item");
 let i;
@@ -272,34 +298,39 @@ let classificationAPI = document.querySelector(".classificationAPI");
 let classification__Title = document.querySelector(".classification__Title");
 
 let increment5;
-
-classification__Title.addEventListener("click", function () {
-  classificationAPI.classList.toggle("activeA");
-});
+if (classification__Title != null) {
+  classification__Title.addEventListener("click", function () {
+    classificationAPI.classList.toggle("activeA");
+  });
+}
 
 let acc4 = document.querySelector(".CFI3");
 let acc4mode = document.querySelector(".CFI3mode");
 let increment4;
-
-acc4mode.addEventListener("click", function () {
-  acc4.classList.toggle("activeS");
-});
+if (acc4mode != null) {
+  acc4mode.addEventListener("click", function () {
+    acc4.classList.toggle("activeS");
+  });
+}
 
 let filter__brandGp = document.querySelector(".filter__brandGp");
 let filter__brand = document.querySelector(".filter__brand");
 
-filter__brand.addEventListener("click", function () {
-  filter__brandGp.classList.toggle("activeF");
-});
-
-changeC.addEventListener("click", () => {
-  changeC.classList.toggle("changeJs");
-});
-
-changeCS.addEventListener("click", () => {
-  changeCS.classList.toggle("changeJsS");
-});
-
+if (filter__brand != null) {
+  filter__brand.addEventListener("click", function () {
+    filter__brandGp.classList.toggle("activeF");
+  });
+}
+if (changeC != null) {
+  changeC.addEventListener("click", () => {
+    changeC.classList.toggle("changeJs");
+  });
+}
+if (changeCS != null) {
+  changeCS.addEventListener("click", () => {
+    changeCS.classList.toggle("changeJsS");
+  });
+}
 let viewList = document.querySelector(".view-list");
 let viewGrid = document.querySelector(".view-grid");
 let viewChange = document.querySelector(".viewChange");
@@ -311,13 +342,18 @@ let imgsrc = function (imgList, transform) {
   viewChange.style = transform;
 };
 
-viewList.addEventListener("click", () => {
-  imgsrc('./assets/img/viewlistorange.svg', "transform: translate(0px)");
-});
+if (viewList != null) {
+  viewList.addEventListener("click", () => {
+    imgsrc('./assets/img/viewlistorange.svg', "transform: translate(0px)");
+  });
+}
 
-viewGrid.addEventListener("click", () => {
-  imgsrc('./assets/img/view-gridOrange.svg', "transform: translate(50px)");
-});
+
+if (viewGrid != null) {
+  viewGrid.addEventListener("click", () => {
+    imgsrc('./assets/img/view-gridOrange.svg', "transform: translate(50px)");
+  });
+}
 
 let group__arrow = document.getElementsByClassName(".group__arrow");
 
@@ -344,6 +380,8 @@ $(".group").focusout(function () {
 });
 $(".group .dropdown-menu li").click(function () {
   // $(this).parents('.group').find('span').text($(this).text());
+  $('#' + $(this).parents(".group").data('input')).val($(this).attr("value"))
+
   $(this).parents(".group").find("input").attr("value", $(this).attr("id"));
 });
 
@@ -389,8 +427,8 @@ for (let e of checkboxes) {
   div.innerText = e.labels[0].innerHTML;
   div.classList.add("ltag");
   span.classList.add("lspan");
-  span.setAttribute('src', './assets/img/freeiconcancel.svg');
-  
+  span.setAttribute('src', '/front/assets/img/freeiconcancel.svg');
+
   span.innerText = '';
   span.onclick = function () {
     hidden.append(this.parentNode);
@@ -405,3 +443,17 @@ for (let e of checkboxes) {
 function changeTag() {
   this.checked ? checked.append(this.target) : hidden.append(this.target);
 }
+
+$('.searchInput').on('change', function (e) {
+  $('#search').val($(this).val())
+})
+
+
+let changephoto = document.querySelector('.changephoto');
+let photo__Input = document.querySelector('.photo__Input');
+console.log(photo__Input);
+changephoto.addEventListener('click', () => {
+  $('.changephoto').trigger('')
+
+})
+

@@ -19,7 +19,7 @@
 <body>
 
     <div class="wrapper">
-        <div class="popap">
+        <!-- <div class="popap">
         </div>
         <div class="popap__body">
             <div class="popap__close"><img src="./assets/img/close.svg" alt=""></div>
@@ -43,7 +43,7 @@
                 <div class="popap__help">Нужна помощь?</div>
             </div>
             <div class="popap__registration">Нет учётной записи? <a href="./registration.html">Регистрация</a></div>
-        </div>
+        </div> -->
         <nav class="toolbar">
             <div class="toolbar__Top">
                 <div class="toolbar__container">
@@ -70,31 +70,43 @@
                             <span>Алматы</span>
                             <span class="span"></span>
                         </div>
-                        <div class="toolbarblock signin">
+                        <div class="toolbarblock signin logout">
                             <img src="./assets/img/signIn.svg" alt="">
-                            <span>Войти</span>
+                            <span>Арсен Манукян</span>
+                            <span><img class="toolbar__BottomArrow" src="./assets/img/toolbarBottomArrow.svg"></span>
+                            <div class="logout__Body">
+                                <div class="logout__Item">Выйти</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="toolbar__Bottom toolbar__BottomArea">
-                <div class="toolbar__container containerArea">
+            <div class="toolbar__Bottom">
+                <div class="toolbar__container">
                     <a href="./">
-                <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
-            </a>
-                    <div class="toolbar__inputBlock">
-                        <input class="toolbar__search" placeholder="Поиск по сайту">
-                        <img src="./assets/img/toolbar__searchLogo.svg" alt="">
+                        <div class="logoBlock"><img src="./assets/img/logo.svg" alt=""></div>
+                    </a>
+                    <div class="toolbar__block">
+                        <ul>
+                            <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                            <li><a href="./catalog.html">КАТАЛОГ</a></li>
+                            <li><a href="./partners.html">ПАРТНЕРЫ</a></li>
+                            <li><a href="./aboutUs.html">О НАС</a></li>
+                            <li><a href="./jobvacancy.html">ВАКАНСИИ</a></li>
+                            <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
                     </div>
-                    <div class="toolbar__BottomLast">
-                        <div class="toolbar__bottomLogoBlock">
-                            <img src="./assets/img/toolbarIcon1.svg" alt="">
-                            <img src="./assets/img/toolbarIcon2.svg" alt="">
-                            <img src="./assets/img/toolbarIcon3.svg" alt="">
-                        </div>
-                        <div class="toolbar__BottomUserName">Арсен Манукян</div>
-                        <img class="toolbar__BottomArrow" src="./assets/img/toolbarBottomArrow.svg">
+                    <div class="toolbar__iconBlock">
+                        <img class="img_svg" src="./assets/img/toolbar__search.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__like.svg" alt="">
+                        <img class="img_svg" src="./assets/img/toolbar__bag.svg" alt="">
                     </div>
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
                 </div>
             </div>
             <div class="menu-bg" id="menu-bg"></div>
@@ -155,8 +167,9 @@
                     <div class="personalArea__BodyFlex">
                         <div class="personalArea__Body__User">
                             <div class="personalArea__Body__Photo">
-                                <img src="./assets/img/Area__body_Photo.svg" alt="">
+                                <img class="body__photo" src="./assets/img/Area__body_Photo.svg" alt="">
                                 <img class="changephoto" src="./assets/img/changephoto.svg" alt="">
+                                <input class="photo__Input" type="file" name="" id="">
                             </div>
                             <div class="personalArea__Body__nickname">
                                 <div class="personalArea__Body__name">Арсен Манукян</div>
@@ -176,7 +189,7 @@
                         <div class="personalArea__BodyFlexForm">
                             <div class="personalArea__BodyItemMain">
                                 <div class="personalArea__BodyItem">
-                                    <div class="inputBlock">
+                                    <div class="inputBlock inputBlock1">
                                         <label for="input__name" class="input__Label">Имя</label>
                                         <input type="text" class="input__nameInput" name="" id="input__name"
                                             placeholder="Введите имя">
@@ -290,7 +303,7 @@
                         <div class="footer__BottomGroup">
                             <div class="footerIcon">
                                 <img src="./assets/img/footer_fasebook.svg" alt="">
-                                
+
                                 <img src="./assets/img/footer_instagram.svg" alt="">
                             </div>
                             <div class="footerLanguage">Русский<span></span></div>

@@ -135,6 +135,14 @@ body {
     cursor: pointer;
 }
 
+.toolbar__BottomArrow {
+    transform: rotate(0deg);
+}
+
+.BottomArrow__active {
+    transform: rotate(180deg);
+}
+
 .toolbar__BottomUserName {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
@@ -2999,7 +3007,7 @@ textarea:focus {
 
 .BenefitsGrid {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 420px 420px 420px;
     justify-content: center;
     gap: 15px;
     column-gap: 30px;
@@ -3007,7 +3015,7 @@ textarea:focus {
 
 .BenefitsItem {
     width: 420px;
-    height: 200px;
+    height: auto;
     background: #FFFFFF;
     box-shadow: 0px 8px 10px #E1E1EF;
     border-radius: 15px;
@@ -3055,7 +3063,7 @@ textarea:focus {
 
 .productCatalogGrid {
     display: grid;
-    grid-template-columns: 399px 399px 399px;
+    grid-template-columns: 360px 360px 360px;
     justify-content: center;
     gap: 20px;
 }
@@ -3192,16 +3200,19 @@ textarea:focus {
 .specialOffers {
     padding: 100px 0;
 }
+
 .specialOffersImg {
     max-width: 320px;
     height: 204px;
 }
+
 .specialOffersImg img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
+
 .specialOffers__Title {
     font-family: 'PF BeauSans Pro';
     font-style: normal;
@@ -3945,13 +3956,54 @@ textarea:focus {
     height: 500px;
     overflow: hidden;
     transition: .4s;
-    
+
 }
 
 .trash__MainAdd {
     /* height: auto; */
     transition: .4s;
     overflow-y: auto;
+}
 
+.logout {
+    position: relative;
+}
 
+.logout__Body {
+    position: absolute;
+    top: 140%;
+    width: 100%;
+    height: 40px;
+    background-color: #D36601;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(200%);
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.logout__is-active {
+    transform: translateX(0%);
+    opacity: 1;
+    overflow: visible;
+}
+
+.photo__Input {
+    opacity: 0;
+    position: absolute;
+    top: 77%;
+    width: 40px;
+    height: 40px;
+    right: -5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.body__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
