@@ -1326,18 +1326,29 @@
     }
 
     .sidebar {
-        /* display: none; */
-        /* transform: translateX(-100%); */
+        transform: translateX(-90%);
         position: absolute;
-        left: -30%;
-        background-color: #005287;
+        /* left: -30%; */
         transition: .4s;
         z-index: 2;
-        display: none;
+    }
+
+    .aside__right {
+        display: block;
+        position: absolute;
+        transform: rotate(-90deg) translate(-50%, -50%);
+        top: 35%;
+        right: -21%;
+        transition: .3s;
     }
 
     .sidebar:hover {
-        left: 0%;
+        transform: translateX(0%);
+
+    }
+
+    .sidebar:hover .aside__right {
+        opacity: 0;
     }
 
     .personalArea__Info {
@@ -1391,7 +1402,74 @@
         display: flex;
         margin: 0 auto;
     }
+
+    .personalArea__Body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .history__name,
+    .history__data,
+    .history__price {
+        font-size: 12px;
+    }
+
+    .history__lastBlock {
+        column-gap: 10px;
+    }
+
+    .history__Group {
+        column-gap: 70px;
+    }
+
+    .history__Title {
+        font-size: 11px;
+        padding: 0 20px 0 40px;
+    }
 }
+
+@media screen and (max-width: 580px) {
+    .history__Group {
+        column-gap: 50px;
+    }
+
+    .history__lastBlock {
+        column-gap: 0px;
+    }
+
+    .history__Main {
+        padding: 0;
+    }
+
+    .personalArea__Body {
+        padding: 30px 5px;
+    }
+
+    .history__name,
+    .history__data,
+    .history__price {
+        font-size: 10px;
+    }
+
+    .history__status {
+        font-size: 8px;
+        min-width: 67px;
+        text-align: center;
+    }
+
+    .history__data {
+        min-width: 110px;
+        text-align: center;
+    }
+
+    .history__price {
+        min-width: 65px;
+        text-align: center;
+    }
+}
+
+
+
 
 @media screen and (max-width: 600px) {
     .personalArea__BodyItem {
@@ -1425,11 +1503,37 @@
     }
 }
 
+@media screen and (max-width: 430px) {
+    .personalArea__Body {
+        padding: 30px 0px;
+    }
+
+    .history__Group {
+        column-gap: 30px;
+    }
+
+    .history__Title {
+        font-size: 11px;
+        padding: 0 20px 0 20px;
+    }
+
+    .history__img {
+        display: none;
+    }
+
+    .history__status {
+        font-size: 6px;
+        min-width: 55px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .personalArea__Body__Photo {
         width: 80px;
         height: 80px;
     }
+
     .personalArea__Body {
         margin: 30px 20px;
     }
@@ -1464,4 +1568,201 @@
         flex-direction: column;
         margin-bottom: 30px;
     }
+
+    .sidebar {
+        position: absolute;
+        left: 0%;
+        background-color: #005287;
+        transition: .4s;
+        z-index: 2;
+    }
+
+    .sidebar:hover {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .history__Title {
+        font-size: 12px;
+    }
+
+    .lastBlock2 {
+        column-gap: 40px;
+    }
+
+    .history__Group {
+        column-gap: 80px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .history__Title {
+        font-size: 12px;
+    }
+
+    .lastBlock2 {
+        column-gap: 40px;
+    }
+
+    .history__Group {
+        column-gap: 80px;
+    }
+
+    .personalArea__Body {
+        width: 100%;
+        margin: 0;
+    }
+
+    .history__Main {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .lastBlock2 {
+        column-gap: 0px;
+    }
+
+    .history__Group {
+        column-gap: 40px;
+    }
+
+    .history__Title {
+        padding: 0 30px 0 40px;
+    }
+
+    .history__initialBalance,
+    .history__turnover,
+    .history__remainder {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+
+    .history__initialBalance,
+    .history__turnover,
+    .history__remainder {
+        min-width: 90px;
+    }
+
+    .history__Group {
+        column-gap: 20px;
+    }
+
+    .history__Title {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .history__initialBalance,
+    .history__turnover,
+    .history__remainder {
+        font-size: 10px;
+        min-width: 75px;
+    }
+
+    .history__Title {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .personalArea__Body {
+        padding: 20px 0px;
+    }
+
+    .history__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .history__Title {
+        padding: 0 20px 0 20px;
+    }
+
+    .history__initialBalance,
+    .history__turnover,
+    .history__remainder {
+        font-size: 10px;
+        min-width: 70px;
+    }
+
+    .history__Title {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .trash__price1 {
+        min-width: 100px;
+      }
+      .trash__price2 {
+        min-width: 100px;
+      }
+}
+
+@media screen and (max-width: 700px) {
+    .trash__price1 {
+        min-width: 100px;
+      }
+      .trash__price2 {
+        min-width: 100px;
+      }
+      .trash__item {
+        padding: 0;
+      }
+      .plr {
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      .history__lastBlock {
+        column-gap: 0;
+      }
+      .trash__price1 {
+        min-width: 80px;
+      }
+      .trash__price2 {
+        min-width: 80px;
+      }
+      .number {
+        width: 80px;
+      }
+      .trash__number {
+        font-size: 11px;
+      }
+}
+
+@media screen and (max-width: 530px) {
+    .trash__packaging {
+        font-size: 11px;
+    }
+    .trash__delete {
+        font-size: 11px;
+    }
+    .trash__img img {
+        width: 80%;
+    }
+    .trash__NameBlock {
+        row-gap: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .trash__price1 {
+        min-width: 60px;
+      }
+      .trash__price2 {
+        min-width: 60px;
+      }
+      .number {
+        width: 68px;
+      }
+      .history__name {
+        font-size: 9px;
+      }
 }

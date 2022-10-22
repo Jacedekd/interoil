@@ -57,6 +57,7 @@ body {
 
 .wrapper {
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -908,6 +909,7 @@ img {
     letter-spacing: 0.0275em;
     margin-top: 35px;
     color: #19191D;
+    padding: 0 5px;
 }
 
 .content__CardsArtikul {
@@ -1590,6 +1592,11 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 30px 50px 20px 50px;
+}
+.cardsItem img {
+    max-width: 160px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .cardsItem__Title {
@@ -3391,7 +3398,7 @@ textarea:focus {
     background-color: #fff;
     width: 300px;
     padding: 30px 30px;
-
+    position: relative;
 }
 
 .sidebar__Group1 {
@@ -4006,4 +4013,8 @@ textarea:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.aside__right {
+    display: none;
 }
